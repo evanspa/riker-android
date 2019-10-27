@@ -1,0 +1,8 @@
+<!-- For 7" tablets (600dp wide and bigger) in landscape mode -->
+<resources>
+    <!-- Default screen margins -->
+    <dimen name="activity_horizontal_margin">170dp</dimen>
+
+    <!-- Movement text view in set detail screen -->
+    <dimen name="movement_textview_width">275dp</dimen>
+</resources>

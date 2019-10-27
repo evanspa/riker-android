@@ -1,0 +1,7 @@
+<resources>
+    <!-- Set item view (in recycler views) -->
+    <dimen name="set_item_movement_textview_width">200dp</dimen>
+
+    <!-- Movement text view in set detail screen -->
+    <dimen name="movement_textview_width">300dp</dimen>
+</resources>

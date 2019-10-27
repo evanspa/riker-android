@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rikerapp.riker.activities.SettingsActivity"
+    android:background="@color/contentBackground">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/profileAndSettingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Profile and Settings"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:id="@+id/profileAndSettingsCaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="From here you can view and edit various defaults (e.g., weight units)."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <Button
+                android:id="@+id/generalInfoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:drawableLeft="@drawable/info_icon"
+                android:drawablePadding="@dimen/info_icon_drawable_padding"
+                android:text="General Info"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="Learn about the movements available in Riker, how Riker calculates your strength and more."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Connect to Google Fit"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/data_panel_text_size" />
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/googleFitSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Workouts"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/data_panel_button_text_size" />
+                        <TextView
+                            android:id="@+id/setsSyncedToGoogleFitTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="6dp"
+                            android:text="No sets synced to Google Fit yet."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+                    </LinearLayout>
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/googleFitWorkoutsSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="15dp" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/syncSetsToGoogleFitButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:text="Sync Workouts" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Body weight"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/data_panel_button_text_size" />
+                        <TextView
+                            android:id="@+id/bodyWeightBmlsSyncedToGoogleFitTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="6dp"
+                            android:text="All body weights logged up to\n09/15/2019 are synced to Google Fit."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+                    </LinearLayout>
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/googleFitBodyWeightLogsSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="Sync your Riker workouts and body weight measurements to Google Fit."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <Button
+                android:id="@+id/exportSetsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Export Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="From here you can export your Riker sets data."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <Button
+                android:id="@+id/exportBmlsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Export Body Logs"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="From here you can export your Riker body measurement log data."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <Button
+                android:id="@+id/deleteAllDataButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Delete All Data"
+                android:textColor="@color/rikerRed"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="This action will permanently delete your Riker sets, body measurements logs and settings from this device."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <Button
+                android:id="@+id/reviewButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Review Riker on Google Play"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="Tells others about your experience with Riker.  Leave us a review in Google Play."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Share Riker"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="Enjoying Riker?  Share it with your friends."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <Button
+                android:id="@+id/viewSplashScreenButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="View splash screen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="Riker's splash screen (in case you missed it)."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="@dimen/content_margin_bottom"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="Riker version"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/rikerVersionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="version 1.0 code: 110"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

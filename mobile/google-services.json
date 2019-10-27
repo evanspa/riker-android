@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "140625598872",
+    "firebase_url": "https://fir-riker.firebaseio.com",
+    "project_id": "firebase-riker",
+    "storage_bucket": "firebase-riker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140625598872:android:ddeeabcb40e48d9b",
+        "android_client_info": {
+          "package_name": "com.rikerapp.riker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140625598872-lgiht799vk1bh6b3e8k86kj02nsv0vvi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rikerapp.riker",
+            "certificate_hash": "d84390a3a27738f4e02147d5a2cc9c15b75321b6"
+          }
+        },
+        {
+          "client_id": "140625598872-063l7f4v9qd2srn54eqt33mt9ept0dgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "_REMOVED_"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140625598872-uf1gfnlbvutqirjpkl6obn90jskefdk3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "140625598872-6la18gvkr64h9klup64dvs0tveta8noj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rikerapp.riker-ios-dev"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140625598872:android:d2a7cc1969faff31",
+        "android_client_info": {
+          "package_name": "com.rikerapp.riker.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140625598872-ecpg6pnjkp0sf568kak1dvjmnimdr3h4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rikerapp.riker.dev",
+            "certificate_hash": "d84390a3a27738f4e02147d5a2cc9c15b75321b6"
+          }
+        },
+        {
+          "client_id": "140625598872-063l7f4v9qd2srn54eqt33mt9ept0dgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "_REMOVED_"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140625598872-uf1gfnlbvutqirjpkl6obn90jskefdk3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "140625598872-6la18gvkr64h9klup64dvs0tveta8noj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rikerapp.riker-ios-dev"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

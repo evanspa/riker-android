@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    android:id="@+id/chartSectionBarFlexboxLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/chart_type_heading_bar_vertical_padding"
+    android:paddingBottom="@dimen/chart_type_heading_bar_vertical_padding"
+    android:background="@color/brightGoldenYellow"
+    app:flexWrap="wrap"
+    app:justifyContent="center">
+    <TextView
+        android:id="@+id/chartSectionBarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/home_sub_section_bar_outer_sides_margin"
+        android:text="Total Weight Lifted"
+        android:gravity="center"
+        android:textSize="@dimen/home_sub_section_bar_text_size"
+        android:textColor="@android:color/white" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/home_sub_section_bar_info_button_left_margin"
+        android:gravity="center">
+        <Button
+            android:id="@+id/chartSectionBarInfoButton"
+            android:layout_width="@dimen/button_round_info_size"
+            android:layout_height="@dimen/button_round_info_size"
+            android:textAllCaps="false"
+            android:text="i"
+            android:textSize="@dimen/button_round_info_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/round_light_info_button" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/chartSectionBarMoreChartsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:paddingLeft="@dimen/more_charts_button_horizontal_padding"
+        android:paddingRight="@dimen/more_charts_button_horizontal_padding"
+        android:paddingTop="@dimen/more_charts_button_vertical_padding"
+        android:paddingBottom="@dimen/more_charts_button_vertical_padding"
+        android:layout_marginLeft="@dimen/home_sub_section_bar_info_button_left_margin"
+        android:layout_marginTop="@dimen/home_header_buttons_button_vertical_margin"
+        android:layout_marginBottom="@dimen/home_header_buttons_button_vertical_margin"
+        android:background="@drawable/section_bar_button_bg_weight_lifted"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@android:color/white"
+        android:text="More Charts"
+        android:textSize="@dimen/jump_to_button_text_size" />
+    <Button
+        android:id="@+id/chartSectionBarJumpToTopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:paddingLeft="@dimen/more_charts_button_horizontal_padding"
+        android:paddingRight="@dimen/more_charts_button_horizontal_padding"
+        android:paddingTop="@dimen/more_charts_button_vertical_padding"
+        android:paddingBottom="@dimen/more_charts_button_vertical_padding"
+        android:layout_marginLeft="@dimen/home_sub_section_bar_jump_to_top_button_left_margin"
+        android:layout_marginTop="@dimen/home_header_buttons_button_vertical_margin"
+        android:layout_marginBottom="@dimen/home_header_buttons_button_vertical_margin"
+        android:layout_marginRight="@dimen/home_sub_section_bar_outer_sides_margin"
+        android:background="@drawable/section_bar_button_bg_weight_lifted"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@android:color/white"
+        android:text="Top"
+        android:textSize="@dimen/jump_to_button_text_size" />
+</com.google.android.flexbox.FlexboxLayout>

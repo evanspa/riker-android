@@ -1,0 +1,157 @@
+<resources>
+    <!-- Default screen margins -->
+    <dimen name="activity_horizontal_margin">12dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- To be able to center text on buttons with info-icon drawableLeft -->
+    <!-- https://stackoverflow.com/a/13282128/1034895 -->
+    <dimen name="info_icon_drawable_padding">-14dp</dimen>
+
+    <!-- Splash screen -->
+    <dimen name="splash_welcome_to_font_size">22sp</dimen>
+    <dimen name="splash_welcome_to_margin_top">20dp</dimen>
+    <dimen name="splash_title_font_size">102sp</dimen>
+    <dimen name="splash_subtitle_font_size">20sp</dimen>
+    <dimen name="splash_go_button_font_size">24sp</dimen>
+    <dimen name="splash_pager_tab_button_default_thickness">3dp</dimen>
+    <dimen name="splash_pager_tab_button_selected_thickness">5dp</dimen>
+
+    <!-- Chart-related Screens -->
+    <dimen name="thin_heading_panel_vertical_margin">5dp</dimen>
+    <dimen name="heading_panel_vertical_padding">8dp</dimen>
+    <dimen name="jump_to_button_width">62dp</dimen>
+    <dimen name="jump_to_button_width_larger">86dp</dimen>
+    <dimen name="jump_to_button_height">40dp</dimen>
+    <dimen name="jump_to_button_text_size">12sp</dimen>
+    <dimen name="chart_card_horizontal_margin">7dp</dimen>
+    <dimen name="more_charts_button_vertical_padding">8dp</dimen>
+    <dimen name="more_charts_button_horizontal_padding">10dp</dimen>
+    <dimen name="chart_type_heading_bar_vertical_padding">8dp</dimen>
+
+    <!-- Charts -->
+    <dimen name="no_data_panel_vertical_padding">35dp</dimen>
+    <dimen name="no_data_panel_margin">25dp</dimen>
+    <dimen name="pie_chart_top_margin">10dp</dimen>
+    <dimen name="pie_chart_side_margin">0dp</dimen>
+    <item name="line_chart_grid_line_width" type="dimen" format="float">0.80</item>
+    <item name="normal_chart_line_width" type="dimen" format="float">2.0</item>
+    <item name="thick_chart_line_width" type="dimen" format="float">2.25</item>
+    <item name="thicker_chart_line_width" type="dimen" format="float">2.5</item>
+    <item name="legend_text_size" type="dimen" format="float">10.0</item>
+    <dimen name="yaxis_text_size">13sp</dimen>
+    <item name="yaxis_x_offset" type="dimen" format="float">9.0</item>
+    <dimen name="line_chart_height">400dp</dimen>
+    <dimen name="line_chart_right_margin">10dp</dimen>
+    <item name="line_chart_legend_x_offset" type="dimen" format="float">-15.0</item>
+    <item name="pie_chart_legend_x_offset" type="dimen" format="float">15.0</item>
+    <dimen name="pie_chart_height">285dp</dimen>
+    <item name="pie_chart_entry_label_text_size" type="dimen" format="float">9.0</item>
+    <dimen name="jump_to_panel_vertical_padding">6dp</dimen>
+    <dimen name="jump_button_vertical_margin">11dp</dimen>
+    <dimen name="jump_button_padding">9dp</dimen>
+
+    <!-- Home Screen -->
+    <dimen name="home_horizontal_margin">7dp</dimen>
+    <dimen name="home_vertical_margin">9dp</dimen>
+    <dimen name="home_section_bar_vertical_padding">12dp</dimen>
+    <dimen name="home_section_bar_left_margin">14dp</dimen>
+    <dimen name="home_section_bar_info_button_left_margin">14dp</dimen>
+    <dimen name="home_section_bar_text_size">25sp</dimen>
+    <dimen name="home_sub_section_bar_vertical_padding">7dp</dimen>
+    <dimen name="home_sub_section_bar_outer_sides_margin">8dp</dimen>
+    <dimen name="home_sub_section_bar_info_button_left_margin">13dp</dimen>
+    <dimen name="home_sub_section_bar_jump_to_top_button_left_margin">14dp</dimen>
+    <dimen name="home_sub_section_bar_top_top_margin">2dp</dimen>
+    <dimen name="home_sub_section_bar_text_size">19sp</dimen>
+    <dimen name="home_sub_section_bar_more_charts_button_text_size">13sp</dimen>
+    <dimen name="home_top_chart_top_margin">8dp</dimen>
+    <dimen name="home_chart_top_margin">6dp</dimen>
+    <dimen name="home_header_buttons_button_width">100dp</dimen>
+    <dimen name="home_header_buttons_button_width_smaller">80dp</dimen>
+    <dimen name="home_header_buttons_button_height">40dp</dimen>
+    <dimen name="home_header_buttons_button_text_size">12sp</dimen>
+    <dimen name="home_header_buttons_horizontal_margin">4dp</dimen>
+    <dimen name="home_header_buttons_button_horizontal_margin">6dp</dimen>
+    <dimen name="home_header_buttons_button_vertical_margin">6dp</dimen>
+
+    <!-- Import / Export -->
+    <dimen name="impexp_button_text_size">12sp</dimen>
+
+    <!-- search movements edit text -->
+    <dimen name="search_movs_edittext_padding_start">14dp</dimen>
+    <dimen name="search_movs_edittext_padding_left">9dp</dimen>
+    <dimen name="search_movs_edittext_padding_top">14dp</dimen>
+    <dimen name="search_movs_edittext_padding_bottom">14dp</dimen>
+    <dimen name="search_movs_edittext_margin_top">4dp</dimen>
+    <dimen name="search_movs_edittext_margin_bottom">4dp</dimen>
+
+    <!-- Data Panel Sizes -->
+    <dimen name="data_panel_margin_top">6dp</dimen>
+    <dimen name="data_panel_margin_top_section">15dp</dimen>
+    <dimen name="data_panel_margin_horizontal">8dp</dimen>
+    <dimen name="data_panel_text_size">16sp</dimen>
+    <dimen name="data_panel_button_text_size">12sp</dimen>
+    <dimen name="data_panel_label_margin_vertical">16dp</dimen>
+    <dimen name="data_panel_button_margin_vertical">6dp</dimen>
+    <dimen name="data_panel_caption_text_top_margin">4dp</dimen>
+    <dimen name="data_panel_caption_text_horizontal_margin">5dp</dimen>
+
+    <!-- General Buttons-->
+    <dimen name="button_round_info_size">28dp</dimen>
+    <dimen name="button_round_info_text_size">14sp</dimen>
+
+    <!-- General Font Sizes -->
+    <dimen name="riker_title_font_size">24sp</dimen>
+    <dimen name="riker_dialog_title_font_size">24sp</dimen>
+    <dimen name="riker_dialog_content_font_size">20sp</dimen>
+
+    <!-- General item view Sizes (set item view, bml item view) -->
+    <dimen name="item_view_logged_at_pretty_text_size">14sp</dimen>
+    <dimen name="item_view_logged_at_text_size">10sp</dimen>
+    <dimen name="item_view_edit_in_progress_text_size">10sp</dimen>
+    <dimen name="item_view_right_side_text_size">12sp</dimen>
+    <dimen name="item_view_margin">14dp</dimen>
+
+    <!-- Set item view (in recycler views) -->
+    <dimen name="set_item_movement_textview_width">180dp</dimen>
+
+    <!-- Movement text view in set detail screen -->
+    <dimen name="movement_textview_width">230dp</dimen>
+
+    <!-- Navigation Drawer Sizes -->
+    <dimen name="nav_drawer_header_padding_top">40dp</dimen>
+
+    <!-- Button Select Screens -->
+    <dimen name="button_select_screen_btn_side_margin">26dp</dimen>
+    <dimen name="button_select_screen_btn_margin_top">12dp</dimen>
+    <dimen name="button_select_screen_btn_vert_padding">12dp</dimen>
+    <dimen name="button_select_screen_btn_text_size">15sp</dimen>
+    <dimen name="breadcrumb_button_vert_padding">0dp</dimen>
+    <dimen name="breadcrumb_button_horizontal_padding">13dp</dimen>
+
+    <!-- Enter Reps Screen -->
+    <dimen name="enter_reps_screen_content_horizontal_margin">15dp</dimen>
+    <dimen name="enter_reps_screen_button_round_set_size">38dp</dimen>
+    <dimen name="enter_reps_screen_button_round_set_text_size">16dp</dimen>
+    <dimen name="enter_reps_screen_set_buttons_left_margin">15dp</dimen>
+    <dimen name="enter_reps_screen_set_buttons_top_margin">5dp</dimen>
+    <dimen name="enter_reps_screen_inc_dec_button_text_size">16sp</dimen>
+    <dimen name="enter_reps_screen_inc_dec_button_width">70dp</dimen>
+    <dimen name="enter_reps_screen_inc_dec_button_height">60dp</dimen>
+    <dimen name="enter_reps_screen_common_padding">12dp</dimen>
+    <dimen name="enter_reps_screen_save_button_text_size">18sp</dimen>
+    <dimen name="enter_reps_screen_save_button_height">65dp</dimen>
+    <dimen name="enter_reps_screen_preset_weight_button_text_size">12sp</dimen>
+    <dimen name="enter_reps_screen_preset_weight_button_width">48dp</dimen>
+    <dimen name="enter_reps_screen_preset_weight_button_height">38dp</dimen>
+    <dimen name="enter_reps_screen_change_hide_units_button_text_size">12sp</dimen>
+    <dimen name="enter_reps_screen_more_button_text_size">12sp</dimen>
+    <dimen name="enter_reps_screen_to_failure_margin_top">20dp</dimen>
+    <dimen name="enter_reps_screen_more_margin_top">10dp</dimen>
+    <dimen name="enter_reps_screen_date_buttons_text_size">14sp</dimen>
+    <dimen name="enter_reps_screen_preset_weights_container_width">110dp</dimen>
+    <dimen name="enter_reps_screen_label_text_size">18sp</dimen>
+
+    <!-- Records Screen -->
+    <dimen name="records_screen_sets_button_margin_top">10dp</dimen>
+</resources>

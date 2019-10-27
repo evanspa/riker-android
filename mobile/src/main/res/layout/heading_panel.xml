@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/home_section_bar_vertical_padding"
+    android:paddingBottom="@dimen/home_section_bar_vertical_padding"
+    android:background="@color/colorPrimary"
+    app:flexWrap="wrap"
+    app:justifyContent="center">
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight Lifted"
+        android:textSize="@dimen/home_section_bar_text_size"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/home_section_bar_info_button_left_margin">
+        <Button
+            android:id="@+id/headingInfoButton"
+            android:layout_width="@dimen/button_round_info_size"
+            android:layout_height="@dimen/button_round_info_size"
+            android:textAllCaps="false"
+            android:text="i"
+            android:textSize="@dimen/button_round_info_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/round_light_info_button" />
+        <ImageButton
+            android:id="@+id/globalSettingsImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_section_bar_info_button_left_margin"
+            android:background="@android:color/transparent"
+            android:src="@drawable/riker_light_settings" />
+        <ImageButton
+            android:id="@+id/chartsReloadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_section_bar_info_button_left_margin"
+            android:background="@android:color/transparent"
+            android:src="@drawable/riker_light_chart_reload" />
+    </LinearLayout>
+</com.google.android.flexbox.FlexboxLayout>

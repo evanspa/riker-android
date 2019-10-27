@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="10"
+    tools:context="com.rikerapp.riker.activities.SplashActivity"
+    android:background="@color/colorPrimaryDark">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/splashViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.0" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/splashTabDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/splash_tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        android:layout_weight="0.5" />
+    <Button
+        android:id="@+id/splashGoButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Go"
+        android:textAlignment="center"
+        android:textSize="@dimen/splash_go_button_font_size"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:drawableRight="@drawable/white_right_arrow"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_weight="1.5" />
+</LinearLayout>

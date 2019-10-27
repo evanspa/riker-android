@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/jump_to_panel_vertical_padding"
+    android:paddingBottom="@dimen/jump_to_panel_vertical_padding"
+    android:background="@color/colorPrimary"
+    app:flexWrap="wrap"
+    app:justifyContent="center">
+    <Button
+        android:id="@+id/jumpToMgButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="@dimen/jump_button_padding"
+        android:layout_marginTop="@dimen/jump_button_vertical_margin"
+        android:layout_marginLeft="@dimen/home_header_buttons_button_horizontal_margin"
+        android:layout_marginRight="@dimen/home_header_buttons_button_horizontal_margin"
+        android:background="@drawable/jump_to_button"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/jump_to_button_text_size"
+        android:text="muscle groups"  />
+    <Button
+        android:id="@+id/jumpToMvButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="@dimen/jump_button_padding"
+        android:layout_marginTop="@dimen/jump_button_vertical_margin"
+        android:layout_marginLeft="@dimen/home_header_buttons_button_horizontal_margin"
+        android:layout_marginRight="@dimen/home_header_buttons_button_horizontal_margin"
+        android:background="@drawable/jump_to_button"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/jump_to_button_text_size"
+        android:text="movement variants"  />
+</com.google.android.flexbox.FlexboxLayout>

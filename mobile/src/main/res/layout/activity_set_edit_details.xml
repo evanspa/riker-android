@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rikerapp.riker.activities.SetEditDetailsActivity"
+    android:background="@color/contentBackground"
+    android:focusableInTouchMode="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:text="Logged at"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/loggedAtDateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:text="07/29/2017"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_button_text_size" />
+                <Button
+                    android:id="@+id/loggedAtTimeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:text="2:08:19 PM"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_button_text_size" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Ignore time"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/ignoreTimeSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/caption_msg_margin_top"
+                android:layout_marginLeft="@dimen/caption_msg_margin_horizontal"
+                android:layout_marginRight="@dimen/caption_msg_margin_horizontal"
+                android:text="@string/caption_ignore_time" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:text="Movement"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/movementButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="bent-over two-dumbbell rows"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_button_text_size" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:text="Movement variant"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/movementVariantSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical" />
+                <TextView
+                    android:id="@+id/movementVariantTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="---"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_text_size" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Weight"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/weightEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:text="220" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.85"
+                    android:text="Weight units"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/weightUnitsSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="0.15"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Reps"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/repsEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:text="10" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="To failure"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/toFailureSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:layout_marginBottom="@dimen/content_margin_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="Negatives"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/negativesSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

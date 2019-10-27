@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/headingPanelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/heading_panel" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/jumpToButtonsDashboardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_sub_section_bar_top_top_margin"
+        android:paddingBottom="@dimen/jump_button_vertical_margin"
+        android:background="@color/colorPrimary">
+        <include layout="@layout/jump_to_buttons_dashboard_panel" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/totalContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_sub_section_bar_top_top_margin"
+        android:orientation="vertical">
+        <include layout="@layout/chart_section_bar" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_top_chart_top_margin"
+            android:layout_marginLeft="@dimen/chart_card_horizontal_margin"
+            android:layout_marginRight="@dimen/chart_card_horizontal_margin"
+            android:layout_marginBottom="2dp">
+            <include layout="@layout/line_chart" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/avgContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_sub_section_bar_top_margin"
+        android:orientation="vertical">
+        <include layout="@layout/chart_section_bar" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_top_chart_top_margin"
+            android:layout_marginLeft="@dimen/chart_card_horizontal_margin"
+            android:layout_marginRight="@dimen/chart_card_horizontal_margin"
+            android:layout_marginBottom="2dp">
+            <include layout="@layout/line_chart" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/distContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_sub_section_bar_top_margin"
+        android:orientation="vertical">
+        <include layout="@layout/chart_section_bar" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_top_chart_top_margin"
+            android:layout_marginLeft="@dimen/chart_card_horizontal_margin"
+            android:layout_marginRight="@dimen/chart_card_horizontal_margin"
+            android:layout_marginBottom="2dp">
+            <include layout="@layout/pie_chart" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/distTimeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_sub_section_bar_top_margin"
+        android:orientation="vertical">
+        <include layout="@layout/chart_section_bar" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_top_chart_top_margin"
+            android:layout_marginLeft="@dimen/chart_card_horizontal_margin"
+            android:layout_marginRight="@dimen/chart_card_horizontal_margin"
+            android:layout_marginBottom="2dp">
+            <include layout="@layout/line_chart" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
+

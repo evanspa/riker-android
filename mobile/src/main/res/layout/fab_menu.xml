@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.getbase.floatingactionbutton.FloatingActionsMenu
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floatingActionsMenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    fab:fab_labelStyle="@style/menu_labels_style"
+    fab:fab_addButtonColorNormal="@color/colorPrimary"
+    fab:fab_addButtonColorPressed="@color/colorPrimaryDark"
+    fab:fab_addButtonPlusIconColor="@android:color/white">
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/strengthTrainFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/bootstrapBlue"
+        fab:fab_colorPressed="@color/bootstrapBlueDarker"
+        fab:fab_title="New Set" />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logBmlFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/bootstrapBlue"
+        fab:fab_colorPressed="@color/bootstrapBlueDarker"
+        fab:fab_title="New Body Log" />
+</com.getbase.floatingactionbutton.FloatingActionsMenu>

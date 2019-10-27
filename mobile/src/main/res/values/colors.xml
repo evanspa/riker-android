@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#59636C</color>
+    <color name="colorPrimaryDark">#3f4952</color>
+    <color name="colorAccent">#59636C</color>
+    <color name="colorAccentLighter">#8C969F</color>
+    <color name="bootstrapBlue">#3379B7</color>
+    <color name="bootstrapBlueDarker">#1A609E</color>
+    <color name="bootstrapBlueAlpha">#553379B7</color>
+    <color name="contentBackground">#EBF0F1</color>
+    <color name="contentBackgroundDarker">#B8BDBE</color>
+    <color name="emerlandGreen">#2ECC71</color>
+    <color name="sunflower">#f1c40f</color>
+    <color name="rikerRed">#E74B3C</color>
+    <color name="googleFitPink">#C70562</color>
+    <color name="infoDialogHeader">#3379B7</color>
+    <color name="rikerLightGray">#9FA4A8</color>
+
+    <!-- Section bar colors -->
+    <color name="weightLiftedSubSection">#98BBDB</color>
+    <color name="weightLiftedSubSectionDarker">#6588A8</color>
+
+    <color name="repsSubSection">#7EB09F</color>
+    <color name="repsSubSectionDarker">#4B7D6C</color>
+
+    <color name="restTimeSubSection">#CD9398</color>
+    <color name="restTimeSubSectionDarker">#9A6065</color>
+
+    <!-- Body composition section bar colors -->
+    <color name="bodyWeightSection">#AD9EB3</color>
+    <color name="bodyWeightSectionDarker">#94859A</color>
+
+    <color name="armSizeSection">#7F96B6</color>
+    <color name="armSizeSectionDarker">#667D9D</color>
+
+    <color name="chestSizeSection">#E3B48F</color>
+    <color name="chestSizeSectionDarker">#CA9B76</color>
+
+    <color name="calfSizeSection">#CFBA8B</color>
+    <color name="calfSizeSectionDarker">#B6A172</color>
+
+    <color name="thighSizeSection">#95E4B6</color>
+    <color name="thighSizeSectionDarker">#7CCB9D</color>
+
+    <color name="forearmSizeSection">#F79188</color>
+    <color name="forearmSizeSectionDarker">#DE786F</color>
+
+    <color name="waistSizeSection">#C49FD6</color>
+    <color name="waistSizeSectionDarker">#AB86BD</color>
+
+    <color name="neckSizeSection">#939CA6</color>
+    <color name="neckSizeSectionDarker">#7A838D</color>
+
+    <!-- Chart Colors -->
+    <color name="jordyBlue">#89C4F4</color>
+    <color name="ibisWingColor">#F58F84</color>
+    <color name="brightGoldenYellow">#FFA400</color>
+    <color name="gossipGreen">#87D37C</color>
+    <color name="lightWisteria">#BE90D4</color>
+    <color name="steelBlue">#4B77BE</color>
+    <color name="wisteriaPuple">#9B59B6</color>
+    <color name="creamCan">#F5D76E</color>
+    <color name="silverSandGrey">#BDC3C7</color>
+    <color name="patinaDarkGreen">#407A52</color>
+    <color name="rapeseedBrownish">#A17917</color>
+    <color name="cochineelRed">#9D2933</color>
+    <color name="navyBlue">#003171</color>
+    <color name="ecstasy">#F9690E</color>
+
+    <array name="mainColors">
+        <item>@color/jordyBlue</item>
+        <item>@color/ibisWingColor</item>
+        <item>@color/brightGoldenYellow</item>
+        <item>@color/gossipGreen</item>
+        <item>@color/lightWisteria</item>
+        <item>@color/steelBlue</item>
+        <item>@color/wisteriaPuple</item>
+        <item>@color/creamCan</item>
+        <item>@color/silverSandGrey</item>
+        <item>@color/patinaDarkGreen</item>
+        <item>@color/rapeseedBrownish</item>
+        <item>@color/cochineelRed</item>
+        <item>@color/navyBlue</item>
+        <item>@color/ecstasy</item>
+    </array>
+</resources>

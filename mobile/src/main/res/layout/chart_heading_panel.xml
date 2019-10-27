@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:justifyContent="space_between">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/infoButton"
+            android:layout_width="@dimen/button_round_info_size"
+            android:layout_height="@dimen/button_round_info_size"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:text="i"
+            android:textSize="@dimen/button_round_info_text_size"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_info_button" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/chartTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Weight Lifted"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/chartSubTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="All Muscle Groups"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/settingsImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/riker_semi_black_settings" />
+</com.google.android.flexbox.FlexboxLayout>

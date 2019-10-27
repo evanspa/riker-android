@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rikerapp.riker.activities.ProfileViewDetailsActivity"
+    android:background="@color/contentBackground">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- So yeah, we're giving this first data panel some top margin, even though the enclosing
+             linear layout is already providing the standard screen top margin. -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Weight adjust amount"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/weightAdjustTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/data_panel_text_size" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginTop="@dimen/data_panel_caption_text_top_margin"
+                android:text="@string/profile_default_weight_caption"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="Default weight units"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/defaultWeightUnitsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="lbs"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_text_size" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginTop="@dimen/data_panel_caption_text_top_margin"
+                android:text="@string/profile_default_weight_units_caption"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="Default size units"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/defaultSizeUnitsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="in"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_text_size" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginTop="@dimen/data_panel_caption_text_top_margin"
+                android:text="@string/profile_default_size_units_caption"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

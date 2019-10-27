@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_view_margin"
+        android:layout_marginBottom="@dimen/item_view_margin"
+        android:layout_marginLeft="@dimen/item_view_margin"
+        android:layout_marginRight="@dimen/item_view_margin"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/setLoggedAtPrettyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 minutes ago"
+                android:textSize="@dimen/item_view_logged_at_pretty_text_size"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/setLoggedAtTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/item_view_logged_at_text_size"
+                android:text="08/20/2017" />
+            <TextView
+                android:id="@+id/setSyncNeededTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/item_view_logged_at_text_size"
+                android:text="sync needed" />
+        </LinearLayout>
+        <!-- https://stackoverflow.com/a/14677887/1034895 -->
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/movementTextView"
+                    android:layout_width="@dimen/set_item_movement_textview_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="@dimen/item_view_right_side_text_size"
+                    android:text="bent-over two-dumbbell rows" />
+                <TextView
+                    android:id="@+id/movementVariantTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/item_view_right_side_text_size"
+                    android:text="barbell" />
+                <TextView
+                    android:id="@+id/repsAndWeightTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/item_view_right_side_text_size"
+                    android:text="12 reps of 135 lbs" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/originationDeviceImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/orig_device_android" />
+            <ImageView
+                android:id="@+id/importedImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/imported_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

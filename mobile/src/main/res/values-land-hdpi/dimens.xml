@@ -1,0 +1,7 @@
+<resources>
+    <!-- Charts -->
+    <dimen name="line_chart_height">170dp</dimen>
+    <dimen name="pie_chart_height">165dp</dimen>
+    <dimen name="pie_chart_side_margin">40dp</dimen>
+    <item name="pie_chart_entry_label_text_size" type="dimen" format="float">6.0</item>
+</resources>

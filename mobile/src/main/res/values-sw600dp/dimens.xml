@@ -1,0 +1,90 @@
+<!-- For 7" tablets (600dp wide and bigger) -->
+<resources>
+    <dimen name="fab_margin">42dp</dimen>
+
+    <!-- Default screen margins -->
+    <dimen name="activity_horizontal_margin">48dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+
+    <!-- Splash screen -->
+    <dimen name="splash_welcome_to_font_size">30sp</dimen>
+    <dimen name="splash_welcome_to_margin_top">24dp</dimen>
+    <dimen name="splash_title_font_size">132sp</dimen>
+    <dimen name="splash_subtitle_font_size">28sp</dimen>
+    <dimen name="splash_go_button_font_size">36sp</dimen>
+    <dimen name="splash_pager_tab_button_default_thickness">5dp</dimen>
+    <dimen name="splash_pager_tab_button_selected_thickness">7dp</dimen>
+
+    <!-- Import / Export -->
+    <dimen name="impexp_button_text_size">12sp</dimen>
+
+    <!-- search movements edit text -->
+    <dimen name="search_movs_edittext_padding_start">15dp</dimen>
+    <dimen name="search_movs_edittext_padding_left">10dp</dimen>
+    <dimen name="search_movs_edittext_padding_top">15dp</dimen>
+    <dimen name="search_movs_edittext_padding_bottom">15dp</dimen>
+    <dimen name="search_movs_edittext_margin_top">5dp</dimen>
+    <dimen name="search_movs_edittext_margin_bottom">5dp</dimen>
+
+    <!-- Data Panel Sizes -->
+    <dimen name="data_panel_margin_top">6dp</dimen>
+    <dimen name="data_panel_margin_top_section">16dp</dimen>
+    <dimen name="data_panel_margin_horizontal">10dp</dimen>
+    <dimen name="data_panel_text_size">18sp</dimen>
+    <dimen name="data_panel_button_text_size">14sp</dimen>
+    <dimen name="data_panel_label_margin_vertical">18dp</dimen>
+    <dimen name="data_panel_button_margin_vertical">8dp</dimen>
+
+    <!-- General item view Sizes (set item view, bml item view) -->
+    <dimen name="item_view_logged_at_pretty_text_size">16sp</dimen>
+    <dimen name="item_view_logged_at_text_size">12sp</dimen>
+    <dimen name="item_view_edit_in_progress_text_size">12sp</dimen>
+    <dimen name="item_view_right_side_text_size">14sp</dimen>
+    <dimen name="item_view_margin">15dp</dimen>
+
+    <!-- Set item view (in recycler views) -->
+    <dimen name="set_item_movement_textview_width">200dp</dimen>
+
+    <!-- Movement text view in set detail screen -->
+    <dimen name="movement_textview_width">250dp</dimen>
+
+    <!-- Navigation Drawer Header Padding -->
+    <dimen name="nav_drawer_header_padding_top">42dp</dimen>
+    <dimen name="nav_drawer_header_padding_left">24dp</dimen>
+    <dimen name="nav_drawer_header_padding_bottom">22dp</dimen>
+
+    <!-- Button Select Screens -->
+    <dimen name="button_select_screen_btn_side_margin">28dp</dimen>
+    <dimen name="button_select_screen_btn_margin_top">14dp</dimen>
+    <dimen name="button_select_screen_btn_vert_padding">14dp</dimen>
+    <dimen name="button_select_screen_btn_text_size">16sp</dimen>
+    <dimen name="breadcrumb_button_vert_padding">0dp</dimen>
+    <dimen name="breadcrumb_button_horizontal_padding">15dp</dimen>
+
+    <!-- Enter Reps Screen -->
+    <dimen name="enter_reps_screen_content_horizontal_margin">15dp</dimen>
+    <dimen name="enter_reps_screen_button_round_set_size">40dp</dimen>
+    <dimen name="enter_reps_screen_button_round_set_text_size">18dp</dimen>
+    <dimen name="enter_reps_screen_set_buttons_left_margin">15dp</dimen>
+    <dimen name="enter_reps_screen_set_buttons_top_margin">5dp</dimen>
+    <dimen name="enter_reps_screen_inc_dec_button_text_size">16sp</dimen>
+    <dimen name="enter_reps_screen_inc_dec_button_width">70dp</dimen>
+    <dimen name="enter_reps_screen_inc_dec_button_height">60dp</dimen>
+    <dimen name="enter_reps_screen_common_padding">12dp</dimen>
+    <dimen name="enter_reps_screen_save_button_text_size">20sp</dimen>
+    <dimen name="enter_reps_screen_save_button_height">70dp</dimen>
+    <dimen name="enter_reps_screen_preset_weight_button_text_size">12sp</dimen>
+    <dimen name="enter_reps_screen_preset_weight_button_width">50dp</dimen>
+    <dimen name="enter_reps_screen_preset_weight_button_height">40dp</dimen>
+    <dimen name="enter_reps_screen_change_hide_units_button_text_size">12sp</dimen>
+    <dimen name="enter_reps_screen_more_button_text_size">12sp</dimen>
+    <dimen name="enter_reps_screen_to_failure_margin_top">24dp</dimen>
+    <dimen name="enter_reps_screen_more_margin_top">12dp</dimen>
+    <dimen name="enter_reps_screen_date_buttons_text_size">14sp</dimen>
+    <dimen name="enter_reps_screen_preset_weights_container_width">115dp</dimen>
+    <dimen name="enter_reps_screen_label_text_size">20sp</dimen>
+
+    <!-- Records Screen -->
+    <dimen name="records_screen_sets_button_margin_top">10dp</dimen>
+
+</resources>

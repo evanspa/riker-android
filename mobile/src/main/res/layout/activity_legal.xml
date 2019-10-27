@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rikerapp.riker.activities.LegalActivity"
+    android:background="@color/contentBackground"
+    android:focusableInTouchMode="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/enter_reps_screen_content_horizontal_margin"
+            android:layout_marginRight="@dimen/enter_reps_screen_content_horizontal_margin"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/termsOfServiceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Terms of Service"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <Button
+                android:id="@+id/privacyPolicyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Privacy Policy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <Button
+                android:id="@+id/securityPolicyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Security Policy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

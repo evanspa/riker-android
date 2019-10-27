@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.rikerapp.riker"
+        minSdkVersion 21
+        targetSdkVersion project.targetSdkVersion
+
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation "com.google.android.support:wearable:$project.wearableSupportLibraryVersion"
+    compileOnly "com.google.android.wearable:wearable:$project.wearableSupportLibraryVersion"
+}

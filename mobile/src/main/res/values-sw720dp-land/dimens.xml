@@ -1,0 +1,5 @@
+<!-- For 10” tablets (720dp wide and bigger) in landscape mode -->
+<resources>
+    <!-- Default screen margins -->
+    <dimen name="activity_horizontal_margin">232dp</dimen>
+</resources>

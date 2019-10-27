@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/button_select_screen_btn_side_margin"
+        android:layout_marginRight="@dimen/button_select_screen_btn_side_margin"
+        android:layout_marginTop="@dimen/button_select_screen_btn_margin_top"
+        android:paddingTop="@dimen/button_select_screen_btn_vert_padding"
+        android:paddingBottom="@dimen/button_select_screen_btn_vert_padding"
+        android:background="@drawable/bootstrap_blue_button"
+        android:text="upper body"
+        android:textSize="@dimen/button_select_screen_btn_text_size"
+        android:textColor="@android:color/white" />
+</LinearLayout>

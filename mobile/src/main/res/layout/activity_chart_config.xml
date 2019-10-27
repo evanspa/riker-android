@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rikerapp.riker.activities.ChartConfigActivity"
+    android:background="@color/contentBackground">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/content_margin_bottom"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+            <TextView
+                android:id="@+id/chartConfigTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Weight Lifted"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="@style/TextAppearance.rikerTitle" />
+            <TextView
+                android:id="@+id/firstEntityLoggedAtTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:layout_marginLeft="5dp"
+                android:text="Your first set was logged on 10/05/2014"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:text="Range start date"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/rangeStartDateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:text="11/07/2016"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_button_text_size" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="5dp"
+                android:text="Only include sets that were logged on or after this date."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorPrimary" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:text="Bounded end date?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/boundedEndDateSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rangeEndDateContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/lastEntityLoggedAtTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Your last set was logged on 12/15/2018"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="italic" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                        android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                        android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                        android:text="Range end date"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/data_panel_text_size" />
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:id="@+id/rangeEndDateButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                        android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                        android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                        android:text="12/15/2018"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/data_panel_button_text_size" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Only include sets that were logged on or before this date."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/aggregateByContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:weightSum="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                        android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                        android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                        android:layout_weight="0.85"
+                        android:text="Aggregate by"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/data_panel_text_size" />
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/aggregateBySpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_weight="0.15"
+                        android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                        android:layout_marginBottom="@dimen/data_panel_button_margin_vertical" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="How your set data should be aggregated."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/suppressPieSliceLabelsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                        android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                        android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                        android:text="Suppress pie slice labels?"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/data_panel_text_size" />
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/suppressPieSliceLabelsSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Pie slice labels may become difficult to read or obscure the view of small slices.  This option prevents the labels from displaying."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

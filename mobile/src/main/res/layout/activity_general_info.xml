@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rikerapp.riker.activities.GeneralInfoActivity"
+    android:background="@color/contentBackground">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:text="From here you can learn how Riker calculates how your workouts impact the various muscles of your body as well as dive into the details of how Riker maps the muscles hit by the available movements."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <Button
+                android:id="@+id/howRikerDistributesValuesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:drawableLeft="@drawable/info_icon"
+                android:drawablePadding="@dimen/info_icon_drawable_padding"
+                android:text="How Riker Calculates"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:id="@+id/howRikerDistributesValuesCaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="How Riker distributes the weight lifted, or the reps performed, of a set to the impacted muscles."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <TextView
+                android:id="@+id/howRikerDistributesValuesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginTop="4dp"
+                android:text="Every movement in Riker..."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <Button
+                android:id="@+id/movementsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Movements"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="From here you can browse the available movements and see how Riker maps the muscles hit by each one."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <!--<TextView
+                android:id="@+id/spotSomethingWrongTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginBottom="@dimen/content_margin_bottom"
+                android:text="@string/spot_something_wrong_or_movement"
+                android:autoLink="email"
+                android:textColorLink="@color/bootstrapBlue"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />-->
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

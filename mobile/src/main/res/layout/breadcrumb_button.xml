@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/breadcrumb_button_horizontal_padding"
+    android:paddingRight="@dimen/breadcrumb_button_horizontal_padding"
+    android:paddingTop="@dimen/breadcrumb_button_vert_padding"
+    android:paddingBottom="@dimen/breadcrumb_button_vert_padding"
+    android:textSize="@dimen/button_select_screen_btn_text_size"
+    android:background="@color/bootstrapBlueAlpha"
+    android:textColor="@android:color/white" />

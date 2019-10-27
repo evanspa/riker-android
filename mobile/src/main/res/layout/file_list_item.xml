@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setListItem"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_view_margin"
+        android:layout_marginBottom="@dimen/item_view_margin"
+        android:layout_marginLeft="@dimen/item_view_margin"
+        android:layout_marginRight="@dimen/item_view_margin"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/fileNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="riker-sets-08-31-2017.csv"
+            android:textSize="@dimen/item_view_logged_at_pretty_text_size"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

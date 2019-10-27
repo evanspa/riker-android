@@ -1,0 +1,27 @@
+<resources>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="content_margin_bottom">100dp</dimen>
+
+    <!-- Navigation Drawer Sizes -->
+    <dimen name="nav_drawer_header_padding_top">32dp</dimen>
+    <dimen name="nav_drawer_header_padding_left">16dp</dimen>
+    <dimen name="nav_drawer_header_padding_bottom">16dp</dimen>
+    <dimen name="nav_header_logo_icon_margin_top">10dp</dimen>
+
+    <!-- Caption Message Margins -->
+    <dimen name="caption_msg_margin_top">4dp</dimen>
+    <dimen name="caption_msg_margin_horizontal">4dp</dimen>
+
+    <!-- General Buttons-->
+    <dimen name="button_full_width_vertical_padding">24dp</dimen>
+    <dimen name="button_full_width_side_margin">10dp</dimen>
+
+    <!-- General Screen Margins -->
+    <dimen name="screen_margin_top">15dp</dimen>
+    <dimen name="screen_margin_side">15dp</dimen>
+    <dimen name="screen_margin_side_small">10dp</dimen>
+    <dimen name="dialog_content_margin">15dp</dimen>
+    <dimen name="dialog_header_margin">15dp</dimen>
+
+</resources>

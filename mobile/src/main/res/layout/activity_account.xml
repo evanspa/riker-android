@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rikerapp.riker.activities.AccountActivity"
+    android:background="@color/contentBackground">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Log In"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="Already have a Riker account?  Log in here."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <Button
+                android:id="@+id/freeTrialButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="Start 90-day Free Trial"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:text="Creating a Riker account will enable your records to be saved to the Riker server so you can access them from all your devices, including the web."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <TextView
+                android:id="@+id/rikerAccountBenefitsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:textStyle="bold"
+                android:textColor="@color/bootstrapBlue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_marginTop="15dp"
+                android:text="Riker account benefits" />
+            <TextView
+                android:id="@+id/afterTheTrialTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:textStyle="bold"
+                android:textColor="@color/bootstrapBlue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_marginTop="15dp"
+                android:text="What happens after the 90-day trial?" />
+            <TextView
+                android:id="@+id/useWithoutAccountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/data_panel_caption_text_horizontal_margin"
+                android:layout_marginRight="@dimen/data_panel_caption_text_horizontal_margin"
+                android:textStyle="bold"
+                android:textColor="@color/bootstrapBlue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_marginTop="15dp"
+                android:text="Can I use Riker without creating an account?" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

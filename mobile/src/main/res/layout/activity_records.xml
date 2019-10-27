@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rikerapp.riker.activities.RecordsActivity"
+    android:background="@color/contentBackground">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_records_header"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="@style/TextAppearance.rikerTitle" />
+            <Button
+                android:id="@+id/setsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/records_screen_sets_button_margin_top"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="@string/activity_records_button_title_sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:id="@+id/setCountButtonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="You currently have 14 set records."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textStyle="italic" />
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                app:flexWrap="wrap"
+                app:alignItems="center">
+                <Button
+                    android:id="@+id/setsImportButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Import"
+                    android:textSize="@dimen/impexp_button_text_size" />
+                <Button
+                    android:id="@+id/setsExportButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Export"
+                    android:textSize="@dimen/impexp_button_text_size" />
+                <Button
+                    android:id="@+id/setFilesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Files"
+                    android:textSize="@dimen/impexp_button_text_size" />
+                <Button
+                    android:id="@+id/setsImportExportInfoButton"
+                    android:layout_width="@dimen/button_round_info_size"
+                    android:layout_height="@dimen/button_round_info_size"
+                    android:layout_marginLeft="5dp"
+                    android:textAllCaps="false"
+                    android:text="i"
+                    android:textSize="@dimen/button_round_info_text_size"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_info_button" />
+            </com.google.android.flexbox.FlexboxLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/white"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp" />
+            <Button
+                android:id="@+id/bmlsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="@dimen/button_full_width_vertical_padding"
+                android:paddingBottom="@dimen/button_full_width_vertical_padding"
+                android:text="@string/title_activity_bmls"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            <TextView
+                android:id="@+id/bmlCountButtonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="You currently have 6 body logs."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textStyle="italic" />
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                app:flexWrap="wrap"
+                app:alignItems="center">
+                <Button
+                    android:id="@+id/bmlsImportButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Import"
+                    android:textSize="@dimen/impexp_button_text_size" />
+                <Button
+                    android:id="@+id/bmlsExportButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Export"
+                    android:textSize="@dimen/impexp_button_text_size" />
+                <Button
+                    android:id="@+id/bmlFilesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Files"
+                    android:textSize="@dimen/impexp_button_text_size" />
+                <Button
+                    android:id="@+id/bmlsImportExportInfoButton"
+                    android:layout_width="@dimen/button_round_info_size"
+                    android:layout_height="@dimen/button_round_info_size"
+                    android:layout_marginLeft="5dp"
+                    android:textAllCaps="false"
+                    android:text="i"
+                    android:textSize="@dimen/button_round_info_text_size"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_info_button" />
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/fab_menu" />
+</android.support.design.widget.CoordinatorLayout>

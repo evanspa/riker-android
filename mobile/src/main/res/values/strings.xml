@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [<!ENTITY rikerSupportEmail "support@rikerapp.com">]>
+
+<resources>
+
+    <string name="app_name">Riker</string>
+
+    <!-- Activity Titles -->
+    <string name="title_activity_home">Riker</string>
+    <string name="title_activity_records">Sets and Body Logs</string>
+    <string name="title_activity_set_export_files">Set Export Files</string>
+    <string name="title_activity_bml_export_files">Body Log Export Files</string>
+    <string name="title_activity_account">Log In or Create Trial Account</string>
+    <string name="title_activity_sign_up">90-day Trial Sign Up</string>
+    <string name="title_activity_after_the_trial">Choices After Trial Period</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_enable_google_fit">Connect to Google Fit</string>
+    <string name="title_activity_select_body_segment">Select Body Segment</string>
+    <string name="title_activity_select_muscle_group">Select Muscle Group</string>
+    <string name="title_activity_select_movement">Select Movement</string>
+    <string name="title_activity_select_movement_variant">Select Movement Variant</string>
+    <string name="title_activity_enter_reps">Enter Reps</string>
+    <string name="title_activity_sets">Sets</string>
+    <string name="title_activity_bml_view_details">Body Log Details</string>
+    <string name="title_activity_bml_edit_details">Edit Body Log</string>
+    <string name="title_activity_set_view_details">Set Details</string>
+    <string name="title_activity_set_edit_details">Edit Set</string>
+    <string name="title_activity_bmls">Body Logs</string>
+    <string name="title_activity_muscle_groups_and_movements">Movements</string>
+    <string name="title_activity_movement_detail">Movement Details</string>
+    <string name="title_activity_profile_view_details">Profile and Settings</string>
+    <string name="title_activity_profile_edit_details">Edit Profile and Settings</string>
+    <string name="title_activity_general_info">General Info</string>
+    <string name="title_activity_movements">Movements</string>
+    <string name="title_activity_faq">Riker FAQ</string>
+    <string name="title_activity_legal">Legal</string>
+    <string name="title_activity_tos">Terms of Service</string>
+    <string name="title_activity_privacy_policy">Privacy Policy</string>
+    <string name="title_activity_security_policy">Security Policy</string>
+    <string name="title_activity_what_to_measure">What to Measure?</string>
+    <string name="title_activity_enter_body_weight">Enter Body Weight</string>
+    <string name="title_activity_enter_arm_size">Enter Arm Size</string>
+    <string name="title_activity_enter_chest_size">Enter Chest Size</string>
+    <string name="title_activity_enter_calf_size">Enter Calf Size</string>
+    <string name="title_activity_enter_waist_size">Enter Waist Size</string>
+    <string name="title_activity_enter_thigh_size">Enter Thigh Size</string>
+    <string name="title_activity_enter_forearm_size">Enter Forearm Size</string>
+    <string name="title_activity_enter_neck_size">Enter Neck Size</string>
+    <string name="title_activity_bml_add">Add Body Log</string>
+    <string name="title_activity_chart_config">Chart Config</string>
+    <string name="title_activity_workouts">Workouts</string>
+
+    <!-- Profile and Settings Activity -->
+    <string name="profile_default_weight_caption">The amount to increase or decrease the weight by when recording sets.</string>
+    <string name="profile_default_weight_units_caption">Default units used when logging reps or your body weight.</string>
+    <string name="profile_default_size_units_caption">Default units used when logging your arm size, chest size, etc.</string>
+
+    <!-- Validation messages -->
+    <string name="set_weight_empty">Weight cannot be empty.</string>
+    <string name="set_weight_number">Weight must be a number.</string>
+    <string name="set_weight_positive">Weight must be a positive value.</string>
+    <string name="set_reps_empty">Num reps cannot be empty.</string>
+    <string name="set_reps_number">Num reps must be a number.</string>
+    <string name="set_reps_positive">Num reps must be a positive value.</string>
+    <string name="profile_weight_adjust_empty">Weight adjust cannot be empty.</string>
+    <string name="profile_weight_adjust_number">Weight adjust must be a number.</string>
+    <string name="profile_weight_adjust_positive">Weight adjust must be a positive value.</string>
+    <string name="bml_body_weight_number">Body weight must be a number.</string>
+    <string name="bml_body_weight_positive">Body weight must be a positive value.</string>
+    <string name="bml_arm_size_number">Arm size must be a number.</string>
+    <string name="bml_arm_size_positive">Arm size must be a positive value.</string>
+    <string name="bml_chest_size_number">Chest size must be a number.</string>
+    <string name="bml_chest_size_positive">Chest size must be a positive value.</string>
+    <string name="bml_calf_size_number">Calf size must be a number.</string>
+    <string name="bml_calf_size_positive">Calf size must be a positive value.</string>
+    <string name="bml_thigh_size_number">Thigh size must be a number.</string>
+    <string name="bml_thigh_size_positive">Thigh size must be a positive value.</string>
+    <string name="bml_forearm_size_number">Forearm size must be a number.</string>
+    <string name="bml_forearm_size_positive">Forearm size must be a positive value.</string>
+    <string name="bml_waist_size_number">Waist size must be a number.</string>
+    <string name="bml_waist_size_positive">Waist size must be a positive value.</string>
+    <string name="bml_neck_size_number">Neck size must be a number.</string>
+    <string name="bml_neck_size_positive">Neck size must be a positive value.</string>
+
+    <!-- General Info Activity -->
+    <string name="general_info_how_riker_dists_values" formatted="false"><![CDATA[<p>Every movement in Riker hits a set of muscles.&nbsp;&nbsp;There are <strong>primary muscles</strong> hit and <strong>secondary muscles</strong> hit.</p><p>For example, the primary muscles hit with <Strong>bench press</strong> are: the upper and lower chest muscles.&nbsp;&nbsp;The secondary muscles hit are: the three heads of the tricep muscle group.</p><p>Riker distributes <strong>80%</strong> of the total weight lifted and reps of a set to the primary muscles hit, and distributes the remaining <strong>20%</strong> to the secondary muscles hit.</p><p>If there are multiple primary muscles and multiple secondary muscles hit, the assigned weight and reps are distributed across them evenly.</p><p>So if you do a set of <strong>10 reps of 135 lbs</strong> on bench press, the total weight lifted is: <strong>1,350 lbs</strong>.&nbsp;&nbsp;80% of that weight (<strong>1,080 lbs</strong>) and 80% of the reps (<strong>8 reps</strong>) are assigned to the primary muscles; the upper and lower chest.&nbsp;&nbsp;Since there are 2 primary muscles hit, they are each assigned <strong>540 lbs and 4 reps</strong>.&nbsp;&nbsp;The secondary muscles hit are assigned 20% of the total weight lifted and reps (<strong>270 lbs and 2 reps</strong>).&nbsp;&nbsp;Since there are 3 secondary muscles hit (medial, lateral and long heads of the tricep), they are each assigned <strong>90 lbs and 0.67 reps</strong>.]]></string>
+
+    <!-- Google Fit dialog -->
+    <string name="google_fit_prompt" formatted="false"><![CDATA[<strong>Google Fit</strong> lets you control your fitness data from multiple apps and devices.<p>By connecting Google Fit and Riker, you can integrate your Riker workouts and body weight measurements to Google Fit.</p>]]></string>
+
+    <!-- Entity Details Menu Actions -->
+    <string name="menu_action_view_entity_edit">Edit</string>
+    <string name="menu_action_view_entity_delete">Delete</string>
+    <string name="menu_action_edit_entity_done">Done</string>
+    <string name="menu_action_edit_entity_cancel">Cancel</string>
+    <string name="menu_action_chart_config_clear">Clear</string>
+    <string name="menu_action_chart_config_clear_all">Clear All</string>
+    <string name="menu_action_chart_config_done">Done</string>
+
+    <!-- Entity Detail/Edit Screens -->
+    <string name="caption_ignore_time">Whether or not to track the time component (hour, minute and second) of when the set was recorded.</string>
+    <string name="imported_at">This record was created as part of an import.</string>
+
+    <!-- Records Activity -->
+    <string name="activity_records_header">From here you can drill into all of your data records.</string>
+    <string name="activity_records_button_title_sets">Sets</string>
+    <string name="activity_records_import_export_info_title">Import / Export</string>
+    <string name="activity_set_records_import_export_info_msg"><![CDATA[<p>Riker supports importing and exporting of your set data.</p><p>After exporting, you\'ll be given the option to share the CSV file (e.g., you can email it to yourself or save it to Google Drive).&nbsp;&nbsp;Tap the <strong>Show Files</strong> button to see all your existing export files.</p><p>Tap <strong>Import</strong> to choose a set data file to import into Riker.]]></string>
+    <string name="activity_bml_records_import_export_info_msg"><![CDATA[<p>Riker supports importing and exporting of your body measurement log data.</p><p>After exporting, you\'ll be given the option to share the CSV file (e.g., you can email it to yourself or save it to Google Drive).&nbsp;&nbsp;Tap the <strong>Show Files</strong> button to see all your existing export files.</p><p>Tap <strong>Import</strong> to choose a body log data file to import into Riker.]]></string>
+
+    <!-- Enter Reps Activity -->
+    <string name="to_failure_info_title">To Failure</string>
+    <string name="to_failure_info_msg">Did you do as many reps as possible?  Or did you have more in you?  If you had more reps in you, uncheck this.</string>
+    <string name="negatives_info_title">Negatives</string>
+    <string name="negatives_info_msg"><![CDATA[Slowly loading the weight in the \'down\' position of a movement, with a partner helping to bring the weight to the starting position.<div>Also known as eccentric training.</div>]]></string>
+    <string name="realtime_info_title">Real Time</string>
+    <string name="realtime_info_msg"><![CDATA[If you\'re using Riker to record your sets as you\'re actually working out, keep this checked, and Riker will record the timestamps of your sets automatically.<div>If you\'re using Riker to record your sets that you previously wrote down in a journal (you\'re digitizing your old data), then uncheck this box so you can manually enter the date.</div>]]></string>
+    <string name="ignoretime_info_title">Ignore time of day</string>
+    <string name="ignoretime_info_msg">Ignore the hour, minute and seconds part of the log date. Instead, just save the date.</string>
+
+    <!-- Account Activity -->
+    <string name="riker_account_benefits_title">Riker Account Benefits</string>
+    <string name="riker_account_benefits_msg"><![CDATA[<p>There are several benefits to having a Riker Account subscription:</p><h3>Syncable to all your devices</h3><p>With a Riker account, your data is syncable to all your devices, including: <ul><li>&nbsp;All your Android devices (including tablets)</li><li>&nbsp;iPhones and iPads</li><li></li><li>&nbsp;Web</li></ul></p><h3>Safe storage of your data</h3><p>With a Riker account, your data is safely and securely stored on our servers, making it accessible to all of your devices.</p><h3>Web access</h3><p>With a Riker account, you\'ll be able to access your data from the Riker web site.</p>]]></string>
+    <string name="use_without_account_title">Riker without an Account?</string>
+    <string name="use_without_account_msg"><![CDATA[<h3>Yes.  100% of Riker\'s features are available in the free phone and tablet apps.</h3><p>Without an account subscription, the app will store all of your data locally to your device.  The risk is if you lose your device, or you accidentally uninstall Riker, you would lose all your data (unless you back it up).  Without a subscription, there is no Riker web access.</p><p>That said, Riker\'s export / import functionality can be used to manually backup your data, or transfer it to another device.</p>]]></string>
+
+    <!-- After the Trial Info Activity -->
+    <string name="after_the_trial_heading">After the 90-day trial, you\'ll have 2 choices for continuing with Riker:</string>
+    <string name="after_the_trial_enroll_msg"><![CDATA[<p>Enroll in a Riker subscription and continue to enjoy the benefits of having a Riker account.  The cost is <strong>__PRICE__ per year</strong>.</p>]]></string>
+    <string name="after_the_trial_use_riker_exclusively_msg"><![CDATA[<p>100% of Riker\'s features are available in the free phone and tablet apps.  Without an account subscription, the app will store all of your data locally to your device.  The risk is if you lose your device, or you accidentally uninstall Riker, you would lose all your data (unless you back it up).  Without a subscription, there is no Riker web access.</p><p>That said, Riker\'s export / import functionality can be used to manually backup your data, or transfer it to another device.</p>]]></string>
+
+    <!-- Toolbar (3-dot) Menu -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Misc -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="riker_support_email">&rikerSupportEmail;</string>
+    <string name="spot_something_wrong">Spot something wrong?  Drop us a line at: &rikerSupportEmail;</string>
+    <string name="spot_something_wrong_or_movement">Spot something wrong?  Can\'t find your movement?  Drop us a line at: &rikerSupportEmail;</string>
+    <string name="having_trouble">Having trouble?  Drop us a line at: &rikerSupportEmail;</string>
+
+    <!-- Chart Config strings -->
+    <string name="no_charts_to_configure_title">No Charts to Configure</string>
+    <string name="no_charts_to_configure_message">There are currently no charts to configure settings for.</string>
+    <string name="weight_lifted_global_config_title">Weight Lifted Charts Config</string>
+    <string name="reps_global_config_title">Reps Charts Config</string>
+    <string name="rest_time_global_config_title">Rest Time Charts Config</string>
+    <string name="bml_global_config_title">Body Charts Config</string>
+
+    <!-- Chart List Menu Actions -->
+    <string name="menu_action_scroll_up">Up</string>
+
+    <!-- Chart sub-title strings -->
+    <string name="all_mgs_sub_title">All Muscle Groups</string>
+    <string name="body_segments_sub_title">Body Segments</string>
+    <string name="upper_body_sub_title">Upper Body Muscle Groups</string>
+    <string name="shoulders_sub_title">Shoulders</string>
+    <string name="chest_sub_title">Chest</string>
+    <string name="back_sub_title">Back</string>
+    <string name="biceps_sub_title">Biceps</string>
+    <string name="triceps_sub_title">Triceps</string>
+    <string name="forearms_sub_title">Forearms</string>
+    <string name="core_sub_title">Core</string>
+    <string name="lower_body_sub_title">Lower Body Muscle Groups</string>
+    <string name="quads_sub_title">Quads</string>
+    <string name="hamstrings_sub_title">Hamstrings</string>
+    <string name="calfs_sub_title">Calfs</string>
+    <string name="glutes_sub_title">Glutes</string>
+    <string name="hip_abductors_sub_title">Hip Abductors</string>
+    <string name="hip_flexors_sub_title">Hip Flexors</string>
+    <string name="all_mgs_mv_sub_title">All Muscle Groups - Movement Variants</string>
+    <string name="upper_body_mv_sub_title">Upper Body - Movement Variants</string>
+    <string name="shoulders_mv_sub_title">Shoulders - Movement Variants</string>
+    <string name="chest_mv_sub_title">Chest - Movement Variants</string>
+    <string name="back_mv_sub_title">Back - Movement Variants</string>
+    <string name="biceps_mv_sub_title">Biceps - Movement Variants</string>
+    <string name="triceps_mv_sub_title">Triceps - Movement Variants</string>
+    <string name="forearms_mv_sub_title">Forearms - Movement Variants</string>
+    <string name="core_mv_sub_title">Core - Movement Variants</string>
+    <string name="lower_body_mv_sub_title">Lower Body - Movement Variants</string>
+    <string name="quads_mv_sub_title">Quads - Movement Variants</string>
+    <string name="hamstrings_mv_sub_title">Hamstrings - Movement Variants</string>
+    <string name="calfs_mv_sub_title">Calfs - Movement Variants</string>
+    <string name="glutes_mv_sub_title">Glutes - Movement Variants</string>
+    <string name="hip_abductors_mv_sub_title">Hip Abductors - Movement Variants</string>
+    <string name="hip_flexors_mv_sub_title">Hip Flexors - Movement Variants</string>
+
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- Weight Lifted Metric -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <string name="heading_panel_weight_lifted">Weight Lifted</string>
+    <string name="weight_lifted_info"><![CDATA[The <strong>Weight Lifted</strong> metric is the total amount of weight lifted for a set.  It is the number of reps multiplied by the weight used.<p>For example, if you bench pressed 135 lbs for 10 reps, the <strong>weight lifted</strong> = 1,350 lbs.</p><p>Riker uses this metric as an objective, quantative measure associated with your strength.  Several charts are provided for this metric.</p>]]></string>
+    <!-- Section title strings -->
+    <string name="chart_section_title_weight_lifted_total">Total Weight Lifted</string>
+    <string name="chart_section_title_weight_lifted_per_set">Average per Set</string>
+    <string name="chart_section_title_weight_lifted_dist">Distribution</string>
+    <string name="chart_section_title_weight_lifted_dist_time">Distribution / Time</string>
+    <!-- Chart title strings -->
+    <string name="total_weight_lifted_title">Total Weight Lifted</string>
+    <string name="avg_weight_lifted_title">Average per Set</string>
+    <string name="weight_lifted_dist_title">Weight Lifted Distribution</string>
+    <!-- *************************************************************************************** -->
+    <!-- "Total" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="total_weight_lifted_info"><![CDATA[These timeline charts illustrate your <strong>strength over time</strong>.<p>As you get stronger and are able to lift more weight, you should see the lines trending upwards over time.</p><p>Each point on a line represents the total, aggregate weight lifted for that point in time.  If you have a filter set to aggregate by week, month, etc., points represent the <strong>total weight lifted</strong> over the selected time period.</p><p>For example, if your quadriceps lifted a grand total of 10,000 lbs over a contiguous 5-day period, and you have a filter set to aggregate <strong>by week</strong>, then the data point will display at 10,000 lbs.</p>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="total_weight_lifted_jump_to_mg_section_title">Total Weight Lifted by Muscle Group</string>
+    <string name="total_weight_lifted_jump_to_mg_section_description"><![CDATA[The following charts detail your <strong>total weight lifted</strong> across the individual muscles of your muscle groups, over time.]]></string>
+    <string name="total_weight_lifted_jump_to_mv_section_title">Total Weight Lifted by Movement Variant</string>
+    <string name="total_weight_lifted_jump_to_mv_section_description"><![CDATA[The following timeline charts detail your <strong>total weight lifted</strong> across the different movement variants, over time.]]></string>
+    <!-- Chart info strings -->
+    <string name="total_weight_lifted_total_info"><![CDATA[<div>This chart illustrates the sum total of all your weight lifted, for <strong>all movements</strong>, over time.</div>]]></string>
+    <string name="total_weight_lifted_body_segments_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>all movements</strong>, distributes between your upper and lower body, over time.</div>]]></string>
+    <string name="total_weight_lifted_all_mgs_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>all movements</strong>, distributes across all your major muscle groups, over time.</div>]]></string>
+    <string name="total_weight_lifted_upper_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups, over time.</div>]]></string>
+    <string name="total_weight_lifted_shoulders_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles, over time.</div>]]></string>
+    <string name="total_weight_lifted_chest_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles, over time.</div>]]></string>
+    <string name="total_weight_lifted_back_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the back</strong>, distributes across your individual back muscles, over time.</div>]]></string>
+    <string name="total_weight_lifted_biceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the biceps</strong>, evolves over time.</div>]]></string>
+    <string name="total_weight_lifted_triceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles, over time.</div>]]></string>
+    <string name="total_weight_lifted_forearms_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the forearms</strong>, evolves over time.</div>]]></string>
+    <string name="total_weight_lifted_core_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles, over time.</div>]]></string>
+    <string name="total_weight_lifted_lower_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups, over time.</div>]]></string>
+    <string name="total_weight_lifted_quads_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the quadriceps</strong>, evolves over time.</div>]]></string>
+    <string name="total_weight_lifted_hamstrings_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hamstrings</strong>, evolves over time.</div>]]></string>
+    <string name="total_weight_lifted_calfs_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the calfs</strong>, evolves over time.</div>]]></string>
+    <string name="total_weight_lifted_glutes_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the glutes</strong>, evolves over time.</div>]]></string>
+    <string name="total_weight_lifted_hip_abductors_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hip abductors</strong>, evolves over time.</div>]]></string>
+    <string name="total_weight_lifted_hip_flexors_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hip flexors</strong>, evolves over time.</div>]]></string>
+    <string name="total_weight_lifted_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>all movements</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_chest_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the chest</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_back_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the back</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_biceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_triceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_forearms_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_core_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the core</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_quads_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_calfs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_glutes_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_weight_lifted_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <!-- *************************************************************************************** -->
+    <!-- "Average" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="avg_weight_lifted_info"><![CDATA[<p>These timeline charts illustrate your <strong>strength per set over time</strong>.</p><p>As you get stronger and are able to lift more weight, you should see the lines trending upwards over time.</p><p><span>Each point on a line represents the average weight lifted per set for that point in time.  For example, if you did 3 sets of curls:</span><ol><li>&nbsp;10 reps of 95 lbs, </li><li>&nbsp;8 reps of 90 lbs and</li><li>&nbsp;8 reps of 80 lbs</li></ol><span>your total weight lifted would be: 2,310 lbs.  Your average per set would be: 770 lbs.</span></p><p>If you have a filter set to aggregate by week, month, etc., points represent the <strong>average weight lifted per set</strong> over the selected time period.</p>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="avg_weight_lifted_jump_to_mg_section_title">Average Weight Lifted by Muscle Group</string>
+    <string name="avg_weight_lifted_jump_to_mg_section_description"><![CDATA[The following charts detail your <strong>weight lifted per-set average</strong> across the individual muscles of your muscle groups, over time.]]></string>
+    <string name="avg_weight_lifted_jump_to_mv_section_title">Average Weight Lifted by Movement Variant</string>
+    <string name="avg_weight_lifted_jump_to_mv_section_description"><![CDATA[The following timeline charts detail your <strong>weight lifted per-set average</strong> across the different movement variants, over time.]]></string>
+    <!-- Chart info strings -->
+    <string name="avg_weight_lifted_avg_info"><![CDATA[<div>This chart illustrates the per-set average of all your weight lifted, for <strong>all movements</strong>, over time.</div>]]></string>
+    <string name="avg_weight_lifted_body_segments_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>all movements</strong>, distributes between your upper and lower body, over time.</div>]]></string>
+    <string name="avg_weight_lifted_all_mgs_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>all movements</strong>, distributes across all your major muscle groups, over time.</div>]]></string>
+    <string name="avg_weight_lifted_upper_body_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups, over time.</div>]]></string>
+    <string name="avg_weight_lifted_shoulders_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles, over time.</div>]]></string>
+    <string name="avg_weight_lifted_chest_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles, over time.</div>]]></string>
+    <string name="avg_weight_lifted_back_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the back</strong>, distributes across your individual back muscles, over time.</div>]]></string>
+    <string name="avg_weight_lifted_biceps_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the biceps</strong>, evolves over time.</div>]]></string>
+    <string name="avg_weight_lifted_triceps_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles, over time.</div>]]></string>
+    <string name="avg_weight_lifted_forearms_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the forearms</strong>, evolves over time.</div>]]></string>
+    <string name="avg_weight_lifted_core_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles, over time.</div>]]></string>
+    <string name="avg_weight_lifted_lower_body_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups, over time.</div>]]></string>
+    <string name="avg_weight_lifted_quads_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the quadriceps</strong>, evolves over time.</div>]]></string>
+    <string name="avg_weight_lifted_hamstrings_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the hamstrings</strong>, evolves over time.</div>]]></string>
+    <string name="avg_weight_lifted_calfs_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the calfs</strong>, evolves over time.</div>]]></string>
+    <string name="avg_weight_lifted_glutes_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the glutes</strong>, evolves over time.</div>]]></string>
+    <string name="avg_weight_lifted_hip_abductors_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the hip abductors</strong>, evolves over time.</div>]]></string>
+    <string name="avg_weight_lifted_hip_flexors_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the hip flexors</strong>, evolves over time.</div>]]></string>
+    <string name="avg_weight_lifted_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>all movements</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_chest_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the chest</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_back_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the back</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_biceps_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_triceps_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_forearms_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_core_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the core</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_quads_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_calfs_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_glutes_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_weight_lifted_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your weight lifted, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <!-- *************************************************************************************** -->
+    <!-- "Dist" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="dist_weight_lifted_info"><![CDATA[<div><div>These pie charts show <strong>where your strength is distributed</strong>.  There are charts to show how your strength is distributed across your muscle groups and movement variants.</div><div>They are helpful for shedding light on areas of your strength training that you may neglect or overwork.</div><div>For example, if you don\'t do enough lower body training, that would show in the <strong>Total Weight Lifted - Body Segments</strong> pie chart.  The lower body slice would be disproportionately smaller than the upper body slice.</div></div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="dist_weight_lifted_jump_to_mg_section_title">Weight Lifted Distribution by Muscle Group</string>
+    <string name="dist_weight_lifted_jump_to_mg_section_description"><![CDATA[The following pie charts detail how your <strong>total weight lifted distributes</strong> across the individual muscles of your muscle groups.]]></string>
+    <string name="dist_weight_lifted_jump_to_mv_section_title">Weight Lifted Distribution by Movement Variant</string>
+    <string name="dist_weight_lifted_jump_to_mv_section_description"><![CDATA[The following pie charts detail how your <strong>total weight lifted distributes</strong> across the different movement variants.]]></string>
+    <!-- Chart info strings -->
+    <string name="dist_weight_lifted_body_segments_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>all movements</strong>, distributes between your upper and lower body.</div>]]></string>
+    <string name="dist_weight_lifted_all_mgs_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>all movements</strong>, distributes across all your major muscle groups.</div>]]></string>
+    <string name="dist_weight_lifted_upper_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups.</div>]]></string>
+    <string name="dist_weight_lifted_shoulders_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles.</div>]]></string>
+    <string name="dist_weight_lifted_chest_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles.</div>]]></string>
+    <string name="dist_weight_lifted_back_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the back</strong>, distributes across your individual back muscles.</div>]]></string>
+    <string name="dist_weight_lifted_triceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles.</div>]]></string>
+    <string name="dist_weight_lifted_core_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles.</div>]]></string>
+    <string name="dist_weight_lifted_lower_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups.</div>]]></string>
+    <string name="dist_weight_lifted_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>all movements</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_chest_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the chest</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_back_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the back</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_biceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_triceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_forearms_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_core_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the core</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_quads_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_calfs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_glutes_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_weight_lifted_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants.</div>]]></string>
+    <!-- *************************************************************************************** -->
+    <!-- "Dist / Time" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="dist_time_weight_lifted_info"><![CDATA[<div><p>These timeline charts illustrate <strong>where your strength is distributed over time</strong>.</p><p>For example, if over time you begin to neglect lower body training, you will see the lower body line trend downwards over time, and the upper body line trend upwards.</p></div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="dist_time_weight_lifted_jump_to_mg_section_title">Weight Lifted Distribution by Muscle Group</string>
+    <string name="dist_time_weight_lifted_jump_to_mg_section_description"><![CDATA[The following pie charts detail how your <strong>total weight lifted distributes</strong> across the individual muscles of your muscle groups, over time.]]></string>
+    <string name="dist_time_weight_lifted_jump_to_mv_section_title">Weight Lifted Distribution by Movement Variant</string>
+    <string name="dist_time_weight_lifted_jump_to_mv_section_description"><![CDATA[The following pie charts detail how your <strong>total weight lifted distributes</strong> across the different movement variants, over time.]]></string>
+    <!-- Chart info strings -->
+    <string name="dist_time_weight_lifted_body_segments_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>all movements</strong>, distributes between your upper and lower body, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_all_mgs_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>all movements</strong>, distributes across all your major muscle groups, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_upper_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_shoulders_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_chest_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_back_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the back</strong>, distributes across your individual back muscles, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_triceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_core_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_lower_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>all movements</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_chest_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the chest</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_back_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the back</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_biceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_triceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_forearms_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_core_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the core</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_quads_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_calfs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_glutes_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_weight_lifted_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your weight lifted, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- Reps Metric -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <string name="heading_panel_reps">Reps</string>
+    <string name="reps_info"><![CDATA[<div><div>The <strong>Reps</strong> metric is simply the number of reps done for a set (regardless of the weight used).</div><div>Several charts are provided for this metric.</div></div>]]></string>
+    <!-- Section title strings -->
+    <string name="chart_section_title_reps_total">Total Reps</string>
+    <string name="chart_section_title_reps_per_set">Average per Set</string>
+    <string name="chart_section_title_reps_dist">Distribution</string>
+    <string name="chart_section_title_reps_dist_time">Distribution / Time</string>
+    <!-- Chart title strings -->
+    <string name="total_reps_title">Total Reps</string>
+    <string name="avg_reps_title">Average per Set</string>
+    <string name="reps_dist_title">Reps Distribution</string>
+    <!-- *************************************************************************************** -->
+    <!-- "Total" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="total_reps_info"><![CDATA[<div><div>If you\'re a beginner, as you get stronger and your <strong>stamina increases</strong>, you should see the lines trending upwards over time.  Or, if you normally prefer doing high-rep sets, but decide to change to start doing heavier weight with less reps, you should see the lines trending downwards over time.</div><div>Each point on a line represents the sum total rep count for that point in time.  If you have a filter set to aggregate by week, month, etc., points represent the <strong>aggregate rep count</strong> over the selected time period.</div><div>For example, if your shoulders did a grand total of 175 reps over a contiguous 3-day period, and you have a filter set to aggregate <strong>by week</strong>, then the data point will display at 175 reps.</div></div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="total_reps_jump_to_mg_section_title">Total Reps by Muscle Group</string>
+    <string name="total_reps_jump_to_mg_section_description"><![CDATA[The following charts detail your <strong>total reps</strong> across the individual muscles of your muscle groups, over time.]]></string>
+    <string name="total_reps_jump_to_mv_section_title">Total Reps by Movement Variant</string>
+    <string name="total_reps_jump_to_mv_section_description"><![CDATA[The following timeline charts detail your <strong>total reps</strong> across the different movement variants, over time.]]></string>
+    <!-- Chart info strings -->
+    <string name="total_reps_total_info"><![CDATA[<div>This chart illustrates the sum total of all your reps, for <strong>all movements</strong>, over time.</div>]]></string>
+    <string name="total_reps_body_segments_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>all movements</strong>, distributes between your upper and lower body, over time.</div>]]></string>
+    <string name="total_reps_all_mgs_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>all movements</strong>, distributes across all your major muscle groups, over time.</div>]]></string>
+    <string name="total_reps_upper_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups, over time.</div>]]></string>
+    <string name="total_reps_shoulders_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles, over time.</div>]]></string>
+    <string name="total_reps_chest_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles, over time.</div>]]></string>
+    <string name="total_reps_back_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the back</strong>, distributes across your individual back muscles, over time.</div>]]></string>
+    <string name="total_reps_biceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the biceps</strong>, evolves over time.</div>]]></string>
+    <string name="total_reps_triceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles, over time.</div>]]></string>
+    <string name="total_reps_forearms_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the forearms</strong>, evolves over time.</div>]]></string>
+    <string name="total_reps_core_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles, over time.</div>]]></string>
+    <string name="total_reps_lower_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups, over time.</div>]]></string>
+    <string name="total_reps_quads_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the quadriceps</strong>, evolves over time.</div>]]></string>
+    <string name="total_reps_hamstrings_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hamstrings</strong>, evolves over time.</div>]]></string>
+    <string name="total_reps_calfs_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the calfs</strong>, evolves over time.</div>]]></string>
+    <string name="total_reps_glutes_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the glutes</strong>, evolves over time.</div>]]></string>
+    <string name="total_reps_hip_abductors_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hip abductors</strong>, evolves over time.</div>]]></string>
+    <string name="total_reps_hip_flexors_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hip flexors</strong>, evolves over time.</div>]]></string>
+    <string name="total_reps_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>all movements</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_chest_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the chest</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_back_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the back</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_biceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_triceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_forearms_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_core_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the core</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_quads_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_calfs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_glutes_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_reps_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <!-- *************************************************************************************** -->
+    <!-- "Average" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="avg_reps_info"><![CDATA[<div><div>These timeline charts illustrate your <strong>average rep count over time</strong>.</div><div>If you\'re a beginner, as you get stronger and your <strong>stamina increases</strong>, you should see the lines trending upwards over time.  Or, if you normally prefer doing high-rep sets, but decide to change to start doing heavier weight with less reps, you should see the lines trending downwards over time.</div><div>Each point on a line represents the sum total rep count for that point in time.  If you have a filter set to aggregate by week, month, etc., points represent the <strong>average rep count</strong> over the selected time period.</div><div><span>Each point on a line represents the average rep count per set for that point in time.  For example, if you did 3 sets of calf raises</span><ol><li>10 reps of 295 lbs</li><li>8 reps of 275 lbs</li><li>8 reps of 265 lbs</li></ol><span>your total rep count would be: 26.  Your average per set would be: 8.7.</span></div><div>If you have a filter set to aggregate by week, month, etc., points represent the <strong>average rep count per set</strong> over the selected time period.</div></div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="avg_reps_jump_to_mg_section_title">Average Reps by Muscle Group</string>
+    <string name="avg_reps_jump_to_mg_section_description"><![CDATA[The following charts detail your <strong>rep count per-set average</strong> across the individual muscles of your muscle groups, over time.]]></string>
+    <string name="avg_reps_jump_to_mv_section_title">Average Reps by Movement Variant</string>
+    <string name="avg_reps_jump_to_mv_section_description"><![CDATA[The following timeline charts detail your <strong>rep count per-set average</strong> across the different movement variants, over time.]]></string>
+    <!-- Chart info strings -->
+    <string name="avg_reps_avg_info"><![CDATA[<div>This chart illustrates the per-set average of all your reps, for <strong>all movements</strong>, over time.</div>]]></string>
+    <string name="avg_reps_body_segments_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>all movements</strong>, distributes between your upper and lower body, over time.</div>]]></string>
+    <string name="avg_reps_all_mgs_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>all movements</strong>, distributes across all your major muscle groups, over time.</div>]]></string>
+    <string name="avg_reps_upper_body_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups, over time.</div>]]></string>
+    <string name="avg_reps_shoulders_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles, over time.</div>]]></string>
+    <string name="avg_reps_chest_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles, over time.</div>]]></string>
+    <string name="avg_reps_back_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the back</strong>, distributes across your individual back muscles, over time.</div>]]></string>
+    <string name="avg_reps_biceps_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the biceps</strong>, evolves over time.</div>]]></string>
+    <string name="avg_reps_triceps_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles, over time.</div>]]></string>
+    <string name="avg_reps_forearms_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the forearms</strong>, evolves over time.</div>]]></string>
+    <string name="avg_reps_core_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles, over time.</div>]]></string>
+    <string name="avg_reps_lower_body_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups, over time.</div>]]></string>
+    <string name="avg_reps_quads_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the quadriceps</strong>, evolves over time.</div>]]></string>
+    <string name="avg_reps_hamstrings_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the hamstrings</strong>, evolves over time.</div>]]></string>
+    <string name="avg_reps_calfs_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the calfs</strong>, evolves over time.</div>]]></string>
+    <string name="avg_reps_glutes_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the glutes</strong>, evolves over time.</div>]]></string>
+    <string name="avg_reps_hip_abductors_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the hip abductors</strong>, evolves over time.</div>]]></string>
+    <string name="avg_reps_hip_flexors_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the hip flexors</strong>, evolves over time.</div>]]></string>
+    <string name="avg_reps_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>all movements</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_chest_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the chest</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_back_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the back</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_biceps_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_triceps_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_forearms_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_core_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the core</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_quads_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_calfs_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_glutes_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_reps_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your reps, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <!-- *************************************************************************************** -->
+    <!-- "Dist" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="dist_reps_info"><![CDATA[<div><div>These pie charts enable you to make comparisons with the <strong>Reps</strong> metric across time periods.</div><div>They are helpful for spotting training inconsistencies.</div><div>For example, if you tend to do very high rep sets for your shoulder movements, but then do very low-rep movements for all your chest movements, that would show in the <strong>Total Reps - Muscle Groups</strong> pie chart.  The shoulders slice would be disproportionately larger than the chest slice.</div></div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="dist_reps_jump_to_mg_section_title">Reps Distribution by Muscle Group</string>
+    <string name="dist_reps_jump_to_mg_section_description"><![CDATA[The following pie charts detail how your <strong>total reps distributes</strong> across the individual muscles of your muscle groups.]]></string>
+    <string name="dist_reps_jump_to_mv_section_title">Reps Distribution by Movement Variant</string>
+    <string name="dist_reps_jump_to_mv_section_description"><![CDATA[The following pie charts detail how your <strong>total reps distributes</strong> across the different movement variants.]]></string>
+    <!-- Chart info strings -->
+    <string name="dist_reps_body_segments_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>all movements</strong>, distributes between your upper and lower body.</div>]]></string>
+    <string name="dist_reps_all_mgs_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>all movements</strong>, distributes across all your major muscle groups.</div>]]></string>
+    <string name="dist_reps_upper_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups.</div>]]></string>
+    <string name="dist_reps_shoulders_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles.</div>]]></string>
+    <string name="dist_reps_chest_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles.</div>]]></string>
+    <string name="dist_reps_back_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the back</strong>, distributes across your individual back muscles.</div>]]></string>
+    <string name="dist_reps_triceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles.</div>]]></string>
+    <string name="dist_reps_core_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles.</div>]]></string>
+    <string name="dist_reps_lower_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups.</div>]]></string>
+    <string name="dist_reps_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>all movements</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_chest_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the chest</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_back_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the back</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_biceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_triceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_forearms_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_core_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the core</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_quads_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_calfs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_glutes_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_reps_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants.</div>]]></string>
+    <!-- *************************************************************************************** -->
+    <!-- "Dist / Time" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="dist_time_reps_info"><![CDATA[<div><div>These timeline distribution charts illustrate <strong>where your reps are distributed over time</strong>.</div><div>If over time you change your workout style in terms of the number of reps that you typically do, the plot lines will trend accordingly.  They will trend upwards if you increase your rep count over time; downwards if you decrease your rep count over time.</div></div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="dist_time_reps_jump_to_mg_section_title">Reps Distribution by Muscle Group</string>
+    <string name="dist_time_reps_jump_to_mg_section_description"><![CDATA[The following pie charts detail how your <strong>total reps distributes</strong> across the individual muscles of your muscle groups, over time.]]></string>
+    <string name="dist_time_reps_jump_to_mv_section_title">Reps Distribution by Movement Variant</string>
+    <string name="dist_time_reps_jump_to_mv_section_description"><![CDATA[The following pie charts detail how your <strong>total reps distributes</strong> across the different movement variants, over time.]]></string>
+    <!-- Chart info strings -->
+    <string name="dist_time_reps_body_segments_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>all movements</strong>, distributes between your upper and lower body, over time.</div>]]></string>
+    <string name="dist_time_reps_all_mgs_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>all movements</strong>, distributes across all your major muscle groups, over time.</div>]]></string>
+    <string name="dist_time_reps_upper_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups, over time.</div>]]></string>
+    <string name="dist_time_reps_shoulders_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles, over time.</div>]]></string>
+    <string name="dist_time_reps_chest_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles, over time.</div>]]></string>
+    <string name="dist_time_reps_back_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the back</strong>, distributes across your individual back muscles, over time.</div>]]></string>
+    <string name="dist_time_reps_triceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles, over time.</div>]]></string>
+    <string name="dist_time_reps_core_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles, over time.</div>]]></string>
+    <string name="dist_time_reps_lower_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups, over time.</div>]]></string>
+    <string name="dist_time_reps_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>all movements</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_chest_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the chest</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_back_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the back</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_biceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_triceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_forearms_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_core_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the core</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_quads_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_calfs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_glutes_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_reps_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your reps, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- Rest Time Metric -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <string name="heading_panel_rest_time">Rest Time</string>
+    <string name="rest_time_info"><![CDATA[<div><div>The <strong>Rest Time</strong> metric is the amount of rest time spent between sets of the same movement and variant.</div><div style={{marginTop: 10}}>For example, if you do 3 sets of machine shoulder press, this metric captures your rest time between sets 1 and 2, and sets 2 and 3.</div><div style={{marginTop: 10}}>Time spent between sets when switching to a new movement or variant is not counted.</div></div>]]></string>
+    <!-- Section title strings -->
+    <string name="chart_section_title_rest_time_total">Total Rest Time</string>
+    <string name="chart_section_title_rest_time_per_set">Average per Set</string>
+    <string name="chart_section_title_rest_time_dist">Distribution</string>
+    <string name="chart_section_title_rest_time_dist_time">Distribution / Time</string>
+    <!-- Chart title strings -->
+    <string name="total_rest_time_title">Total Rest Time</string>
+    <string name="avg_rest_time_title">Average per Set</string>
+    <string name="rest_time_dist_title">Rest Time Distribution</string>
+    <!-- *************************************************************************************** -->
+    <!-- "Total" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="total_rest_time_info"><![CDATA[<div><div>The aggregate timeline charts illustrate your <strong>rest time spent between sets over time</strong>.</div><div>Each point on a line represents the total time spent between sets for that point in time.  If you have a filter set to aggregate by week, month, etc., points represent the <strong>aggregate time spent between sets</strong> over the selected time period.</div><div>For example, if you spent a grand total of 20 minutes resting between sets of deadlifts over a contiguous 3-day period, and you have a filter set to aggregate <strong>by week</strong>, then the data point will display at 20 minutes.</div></div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="total_rest_time_jump_to_mg_section_title">Total Rest Time by Muscle Group</string>
+    <string name="total_rest_time_jump_to_mg_section_description"><![CDATA[The following charts detail <strong>your total rest time between sets</strong> across the individual muscles of your muscle groups, over time.]]></string>
+    <string name="total_rest_time_jump_to_mv_section_title">Total Rest Time by Movement Variant</string>
+    <string name="total_rest_time_jump_to_mv_section_description"><![CDATA[The following charts detail <strong>your total rest time between sets</strong> across the different movement variants, over time.]]></string>
+    <!-- Chart info strings -->
+    <string name="total_rest_time_total_info"><![CDATA[<div>This chart illustrates the sum total of all your rest time spent between sets, for <strong>all movements</strong>, over time.</div>]]></string>
+    <string name="total_rest_time_body_segments_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>all movements</strong>, distributes between your upper and lower body, over time.</div>]]></string>
+    <string name="total_rest_time_all_mgs_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>all movements</strong>, distributes across all your major muscle groups, over time.</div>]]></string>
+    <string name="total_rest_time_upper_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups, over time.</div>]]></string>
+    <string name="total_rest_time_shoulders_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles, over time.</div>]]></string>
+    <string name="total_rest_time_chest_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles, over time.</div>]]></string>
+    <string name="total_rest_time_back_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the back</strong>, distributes across your individual back muscles, over time.</div>]]></string>
+    <string name="total_rest_time_biceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the biceps</strong>, evolves over time.</div>]]></string>
+    <string name="total_rest_time_triceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles, over time.</div>]]></string>
+    <string name="total_rest_time_forearms_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the forearms</strong>, evolves over time.</div>]]></string>
+    <string name="total_rest_time_core_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles, over time.</div>]]></string>
+    <string name="total_rest_time_lower_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups, over time.</div>]]></string>
+    <string name="total_rest_time_quads_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the quadriceps</strong>, evolves over time.</div>]]></string>
+    <string name="total_rest_time_hamstrings_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hamstrings</strong>, evolves over time.</div>]]></string>
+    <string name="total_rest_time_calfs_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the calfs</strong>, evolves over time.</div>]]></string>
+    <string name="total_rest_time_glutes_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the glutes</strong>, evolves over time.</div>]]></string>
+    <string name="total_rest_time_hip_abductors_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hip abductors</strong>, evolves over time.</div>]]></string>
+    <string name="total_rest_time_hip_flexors_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hip flexors</strong>, evolves over time.</div>]]></string>
+    <string name="total_rest_time_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>all movements</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_chest_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the chest</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_back_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the back</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_biceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_triceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_forearms_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_core_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the core</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_quads_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_calfs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_glutes_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="total_rest_time_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <!-- *************************************************************************************** -->
+    <!-- "Average" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="avg_rest_time_info"><![CDATA[<div><div>These timeline charts illustrate your <strong>average rest time spent between sets over time.</strong></div><div>If you change your workout style over time in terms of how long of a rest you take between sets, the data lines will trend accordingly.</div><div>Each point on a line represents the average time between sets for that point in time.  If you have a filter set to aggregate by week, month, etc., points represent the <strong>average time spent between sets</strong> over the selected time period.</div><div>Each point on a line represents the average time spent between sets for that point in time.  For example, if you did 3 sets of Arnold presses, and between sets (1) and (2) you rested for 45 seconds, and between sets (2) and (3) you rested for 54 seconds, your total time between sets would be: 99 seconds.  Your average per set would be: 49.5 seconds.\n\nIf you have a filter set to aggregate by week, month, etc., points represent the <strong>average time spent between sets</strong> over the selected time period.</div>
+                </div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="avg_rest_time_jump_to_mg_section_title">Average Rest Time by Muscle Group</string>
+    <string name="avg_rest_time_jump_to_mg_section_description"><![CDATA[The following charts detail your <strong>rest time per-set average</strong> across the individual muscles of your muscle groups, over time.]]></string>
+    <string name="avg_rest_time_jump_to_mv_section_title">Average Rest Time by Movement Variant</string>
+    <string name="avg_rest_time_jump_to_mv_section_description"><![CDATA[The following timeline charts detail your <strong>rest time per-set average</strong> across the different movement variants, over time.]]></string>
+    <!-- Chart info strings -->
+    <string name="avg_rest_time_avg_info"><![CDATA[<div>This chart illustrates the per-set average of all your rest time spent between sets, for <strong>all movements</strong>, over time.</div>]]></string>
+    <string name="avg_rest_time_body_segments_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>all movements</strong>, distributes between your upper and lower body, over time.</div>]]></string>
+    <string name="avg_rest_time_all_mgs_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>all movements</strong>, distributes across all your major muscle groups, over time.</div>]]></string>
+    <string name="avg_rest_time_upper_body_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups, over time.</div>]]></string>
+    <string name="avg_rest_time_shoulders_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles, over time.</div>]]></string>
+    <string name="avg_rest_time_chest_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles, over time.</div>]]></string>
+    <string name="avg_rest_time_back_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the back</strong>, distributes across your individual back muscles, over time.</div>]]></string>
+    <string name="avg_rest_time_biceps_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the biceps</strong>, evolves over time.</div>]]></string>
+    <string name="avg_rest_time_triceps_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles, over time.</div>]]></string>
+    <string name="avg_rest_time_forearms_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the forearms</strong>, evolves over time.</div>]]></string>
+    <string name="avg_rest_time_core_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles, over time.</div>]]></string>
+    <string name="avg_rest_time_lower_body_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups, over time.</div>]]></string>
+    <string name="avg_rest_time_quads_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the quadriceps</strong>, evolves over time.</div>]]></string>
+    <string name="avg_rest_time_hamstrings_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the hamstrings</strong>, evolves over time.</div>]]></string>
+    <string name="avg_rest_time_calfs_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the calfs</strong>, evolves over time.</div>]]></string>
+    <string name="avg_rest_time_glutes_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the glutes</strong>, evolves over time.</div>]]></string>
+    <string name="avg_rest_time_hip_abductors_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the hip abductors</strong>, evolves over time.</div>]]></string>
+    <string name="avg_rest_time_hip_flexors_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the hip flexors</strong>, evolves over time.</div>]]></string>
+    <string name="avg_rest_time_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>all movements</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_chest_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the chest</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_back_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the back</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_biceps_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_triceps_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_forearms_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_core_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the core</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_quads_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_calfs_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_glutes_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="avg_rest_time_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the per-set average of all your rest time spent between sets, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <!-- *************************************************************************************** -->
+    <!-- "Dist" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="dist_rest_time_info"><![CDATA[<div><div>These pie charts show <strong>how your time spent between sets is distributed</strong>.  There are charts to show how your time between sets are distributed across your muscle groups and movement variants.</div><div>They are helpful for spotting training inconsistencies.</div><div>For example, if you tend to take long rest periods between chest movement sets, but then have very short rest periods between back movement sets, that would show in the <strong>Total Time Spent Between Sets - Upper Body Muscle Groups</strong> pie chart.  The chest slice would be disproportionately larger than the back slice.</div></div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="dist_rest_time_jump_to_mg_section_title">Rest Time Distribution by Muscle Group</string>
+    <string name="dist_rest_time_jump_to_mg_section_description"><![CDATA[The following pie charts detail how your <strong>total rest time distributes</strong> across the individual muscles of your muscle groups.]]></string>
+    <string name="dist_rest_time_jump_to_mv_section_title">Rest Time Distribution by Movement Variant</string>
+    <string name="dist_rest_time_jump_to_mv_section_description"><![CDATA[The following pie charts detail how your <strong>total rest time distributes</strong> across the different movement variants.]]></string>
+    <!-- Chart info strings -->
+    <string name="dist_rest_time_body_segments_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>all movements</strong>, distributes between your upper and lower body.</div>]]></string>
+    <string name="dist_rest_time_all_mgs_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>all movements</strong>, distributes across all your major muscle groups.</div>]]></string>
+    <string name="dist_rest_time_upper_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups.</div>]]></string>
+    <string name="dist_rest_time_shoulders_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles.</div>]]></string>
+    <string name="dist_rest_time_chest_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles.</div>]]></string>
+    <string name="dist_rest_time_back_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the back</strong>, distributes across your individual back muscles.</div>]]></string>
+    <string name="dist_rest_time_triceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles.</div>]]></string>
+    <string name="dist_rest_time_core_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles.</div>]]></string>
+    <string name="dist_rest_time_lower_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups.</div>]]></string>
+    <string name="dist_rest_time_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>all movements</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_chest_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the chest</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_back_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the back</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_biceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_triceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_forearms_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_core_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the core</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_quads_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_calfs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_glutes_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants.</div>]]></string>
+    <string name="dist_rest_time_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants.</div>]]></string>
+    <!-- *************************************************************************************** -->
+    <!-- "Dist / Time" sub-metric -->
+    <!-- *************************************************************************************** -->
+    <string name="dist_time_rest_time_info"><![CDATA[<div><div>These timeline charts illustrate <strong>how your time spent between sets is distributed over time</strong>.</div><div>For example, if over time you increase your rest time between sets for upper body training, or shorten your rest time for lower body training, you will see the upper body line trend upwards over time, and the upper body line trend downwards.</div></div>]]></string>
+    <!-- Jump-to Section Titles and Descriptions -->
+    <string name="dist_time_rest_time_jump_to_mg_section_title">Rest Time Distribution by Muscle Group</string>
+    <string name="dist_time_rest_time_jump_to_mg_section_description"><![CDATA[The following timeline charts detail how your <strong>total rest time distributes</strong> across the individual muscles of your muscle groups, over time.]]></string>
+    <string name="dist_time_rest_time_jump_to_mv_section_title">Rest Time Distribution by Movement Variant</string>
+    <string name="dist_time_rest_time_jump_to_mv_section_description"><![CDATA[The following timeline charts detail how your <strong>total rest time distributes</strong> across the different movement variants, over time.]]></string>
+    <!-- Chart info strings -->
+    <string name="dist_time_rest_time_body_segments_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>all movements</strong>, distributes between your upper and lower body, over time.</div>]]></string>
+    <string name="dist_time_rest_time_all_mgs_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>all movements</strong>, distributes across all your major muscle groups, over time.</div>]]></string>
+    <string name="dist_time_rest_time_upper_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit upper body muscles</strong>, distributes across all your upper body muscle groups, over time.</div>]]></string>
+    <string name="dist_time_rest_time_shoulders_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the shoulders</strong>, distributes across your individual shoulder muscles, over time.</div>]]></string>
+    <string name="dist_time_rest_time_chest_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the chest</strong>, distributes across your individual chest muscles, over time.</div>]]></string>
+    <string name="dist_time_rest_time_back_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the back</strong>, distributes across your individual back muscles, over time.</div>]]></string>
+    <string name="dist_time_rest_time_triceps_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the triceps</strong>, distributes across your individual tricep muscles, over time.</div>]]></string>
+    <string name="dist_time_rest_time_core_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the core</strong>, distributes across your individual abdominial muscles, over time.</div>]]></string>
+    <string name="dist_time_rest_time_lower_body_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit lower body muscles</strong>, distributes across all your lower body muscle groups, over time.</div>]]></string>
+    <string name="dist_time_rest_time_all_mgs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>all movements</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_upper_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit upper body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_shoulders_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the shoulders</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_chest_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the chest</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_back_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the back</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_biceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the biceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_triceps_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the triceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_forearms_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the forearms</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_core_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the core</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_lower_body_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit lower body muscles</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_quads_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the quadriceps</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_hamstrings_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hamstrings</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_calfs_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the calfs</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_glutes_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the glutes</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_hip_abductors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hip abductors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+    <string name="dist_time_rest_time_hip_flexors_mv_info"><![CDATA[<div>This chart illustrates how the sum total of all your rest time spent between sets, for <strong>movements that hit the hip flexors</strong>, distributes across the different movement variants, over time.</div>]]></string>
+
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- Body Composition Metric -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <!-- *************************************************************************************** -->
+    <string name="heading_panel_body">Your Body</string>
+    <string name="body_info"><![CDATA[The <strong>Body</strong> metric provides information about your body composition.</p>]]></string>
+    <!-- Section (and chart) title strings -->
+    <string name="body_weight_title">Body Weight Timeline</string>
+    <string name="arm_size_title">Arm Size Timeline</string>
+    <string name="chest_size_title">Chest Size Timeline</string>
+    <string name="calfs_size_title">Calf Size Timeline</string>
+    <string name="thigh_size_title">Thigh Size Timeline</string>
+    <string name="forearm_size_title">Forearm Size Timeline</string>
+    <string name="waist_size_title">Waist Size Timeline</string>
+    <string name="neck_size_title">Neck Size Timeline</string>
+    <!-- Section info strings -->
+    <string name="body_weight_section_info"><![CDATA[<div>The body weight timeline chart illustrates your <strong>body weight over time</strong>.</div>]]></string>
+    <string name="arm_size_section_info"><![CDATA[<div>The arm size timeline chart illustrates your <strong>arm size over time</strong>.</div>]]></string>
+    <string name="chest_size_section_info"><![CDATA[<div>The chest size timeline chart illustrates your <strong>chest size over time</strong>.</div>]]></string>
+    <string name="calfs_size_section_info"><![CDATA[<div>The calf size timeline chart illustrates your <strong>calf size over time</strong>.</div>]]></string>
+    <string name="thigh_size_section_info"><![CDATA[<div>The thigh size timeline chart illustrates your <strong>thigh size over time</strong>.</div>]]></string>
+    <string name="forearm_size_section_info"><![CDATA[<div>The forearm size timeline chart illustrates your <strong>forearm size over time</strong>.</div>]]></string>
+    <string name="waist_size_section_info"><![CDATA[<div>The waist size timeline chart illustrates your <strong>waist size over time</strong>.</div>]]></string>
+    <string name="neck_size_section_info"><![CDATA[<div>The neck size timeline chart illustrates your <strong>neck size over time</strong>.</div>]]></string>
+    <!-- Chart info strings -->
+    <string name="body_weight_chart_info"><![CDATA[<div>This chart illustrates your <strong>body weight</strong> over time.</div>]]></string>
+    <string name="arm_size_chart_info"><![CDATA[<div>This chart illustrates your <strong>arm size</strong> over time.</div>]]></string>
+    <string name="chest_size_chart_info"><![CDATA[<div>This chart illustrates your <strong>chest size</strong> over time.</div>]]></string>
+    <string name="calfs_size_chart_info"><![CDATA[<div>This chart illustrates your <strong>calf size</strong> over time.</div>]]></string>
+    <string name="thigh_size_chart_info"><![CDATA[<div>This chart illustrates your <strong>thigh size</strong> over time.</div>]]></string>
+    <string name="forearm_size_chart_info"><![CDATA[<div>This chart illustrates your <strong>forearm size</strong> over time.</div>]]></string>
+    <string name="waist_size_chart_info"><![CDATA[<div>This chart illustrates your <strong>waist size</strong> over time.</div>]]></string>
+    <string name="neck_size_chart_info"><![CDATA[<div>This chart illustrates your <strong>neck size</strong> over time.</div>]]></string>
+</resources>

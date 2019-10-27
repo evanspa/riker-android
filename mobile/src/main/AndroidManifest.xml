@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rikerapp.riker">
+
+    <application
+        android:name=".RikerApp"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:fullBackupContent="@xml/riker_backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <service
+            android:name=".intentservice.SaveChartCacheService"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.RecordsActivity"
+            android:label="@string/title_activity_records"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SetExportFilesActivity"
+            android:label="@string/title_activity_set_export_files"
+            android:parentActivityName=".activities.RecordsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RecordsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.BmlExportFilesActivity"
+            android:label="@string/title_activity_bml_export_files"
+            android:parentActivityName=".activities.RecordsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RecordsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.BmlViewDetailsActivity"
+            android:label="@string/title_activity_bml_view_details"
+            android:parentActivityName=".activities.BmlsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.BmlsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.BmlEditDetailsActivity"
+            android:label="@string/title_activity_bml_edit_details"
+            android:parentActivityName=".activities.BmlViewDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.BmlViewDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SetViewDetailsActivity"
+            android:label="@string/title_activity_set_view_details"
+            android:parentActivityName=".activities.SetsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.SetsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SetEditDetailsActivity"
+            android:label="@string/title_activity_set_edit_details"
+            android:parentActivityName=".activities.SetViewDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.SetViewDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AccountActivity"
+            android:label="@string/title_activity_account"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AfterTheTrialInfoActivity"
+            android:label="@string/title_activity_after_the_trial"
+            android:parentActivityName=".activities.AccountActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.AccountActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".activities.AccountActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.AccountActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnableGoogleFitActivity"
+            android:label="@string/title_activity_enable_google_fit"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.LegalActivity"
+            android:label="@string/title_activity_legal"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.WebViewActivity"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ProfileViewDetailsActivity"
+            android:label="@string/title_activity_profile_view_details"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ProfileEditDetailsActivity"
+            android:label="@string/title_activity_profile_edit_details"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.GeneralInfoActivity"
+            android:label="@string/title_activity_general_info"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.BmlsActivity"
+            android:label="@string/title_activity_bmls"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SetsActivity"
+            android:label="@string/title_activity_sets"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MuscleGroupsAndMovementsActivity"
+            android:label="@string/title_activity_muscle_groups_and_movements"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.WhatToMeasureActivity"
+            android:label="@string/title_activity_what_to_measure"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnterBodyWeightActivity"
+            android:label="@string/title_activity_enter_body_weight"
+            android:parentActivityName=".activities.WhatToMeasureActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.WhatToMeasureActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnterArmSizeActivity"
+            android:label="@string/title_activity_enter_arm_size"
+            android:parentActivityName=".activities.WhatToMeasureActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.WhatToMeasureActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnterChestSizeActivity"
+            android:label="@string/title_activity_enter_chest_size"
+            android:parentActivityName=".activities.WhatToMeasureActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.WhatToMeasureActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnterCalfSizeActivity"
+            android:label="@string/title_activity_enter_calf_size"
+            android:parentActivityName=".activities.WhatToMeasureActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.WhatToMeasureActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnterWaistSizeActivity"
+            android:label="@string/title_activity_enter_waist_size"
+            android:parentActivityName=".activities.WhatToMeasureActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.WhatToMeasureActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnterNeckSizeActivity"
+            android:label="@string/title_activity_enter_neck_size"
+            android:parentActivityName=".activities.WhatToMeasureActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.WhatToMeasureActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnterForearmSizeActivity"
+            android:label="@string/title_activity_enter_forearm_size"
+            android:parentActivityName=".activities.WhatToMeasureActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.WhatToMeasureActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnterThighSizeActivity"
+            android:label="@string/title_activity_enter_thigh_size"
+            android:parentActivityName=".activities.WhatToMeasureActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.WhatToMeasureActivity" />
+        </activity>
+        <activity
+            android:name=".activities.BmlAddActivity"
+            android:label="@string/title_activity_bml_add"
+            android:parentActivityName=".activities.WhatToMeasureActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.WhatToMeasureActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SelectBodySegmentActivity"
+            android:label="@string/title_activity_select_body_segment"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SelectMuscleGroupActivity"
+            android:label="@string/title_activity_select_muscle_group"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SelectMovementActivity"
+            android:label="@string/title_activity_select_movement"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SelectMovementVariantActivity"
+            android:label="@string/title_activity_select_movement_variant"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EnterRepsActivity"
+            android:label="@string/title_activity_enter_reps"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MovementDetailActivity"
+            android:label="@string/title_activity_movement_detail"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ChartConfigActivity"
+            android:label="@string/title_activity_chart_config"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.WorkoutsActivity"
+            android:label="@string/title_activity_workouts"
+            android:parentActivityName=".activities.WorkoutsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.TotalWeightLiftedChartsListActivity"
+            android:parentActivityName=".activities.HomeActivity"
+            android:process=":totalWeightList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AvgWeightLiftedChartsListActivity"
+            android:parentActivityName=".activities.HomeActivity"
+            android:process=":avgWeightList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DistWeightLiftedChartsListActivity"
+            android:parentActivityName=".activities.HomeActivity"
+            android:process=":distWeightList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DistTimeWeightLiftedChartsListActivity"
+            android:parentActivityName=".activities.HomeActivity"
+            android:process=":avgTimeWeightList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.RepsDashboardActivity"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.TotalRepsChartsListActivity"
+            android:parentActivityName=".activities.RepsDashboardActivity"
+            android:process=":totalRepsList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RepsDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AvgRepsChartsListActivity"
+            android:parentActivityName=".activities.RepsDashboardActivity"
+            android:process=":avgRepsList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RepsDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DistRepsChartsListActivity"
+            android:parentActivityName=".activities.RepsDashboardActivity"
+            android:process=":distRepsList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RepsDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DistTimeRepsChartsListActivity"
+            android:parentActivityName=".activities.RepsDashboardActivity"
+            android:process=":distTimeRepsList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RepsDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.RestTimeDashboardActivity"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.TotalRestTimeChartsListActivity"
+            android:parentActivityName=".activities.RestTimeDashboardActivity"
+            android:process=":totalRestTimeList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RestTimeDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AvgRestTimeChartsListActivity"
+            android:parentActivityName=".activities.RestTimeDashboardActivity"
+            android:process=":avgRestTimeList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RestTimeDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DistRestTimeChartsListActivity"
+            android:parentActivityName=".activities.RestTimeDashboardActivity"
+            android:process=":distRestTimeList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RestTimeDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DistTimeRestTimeChartsListActivity"
+            android:parentActivityName=".activities.RestTimeDashboardActivity"
+            android:process=":distTimeRestTimeList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.RestTimeDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.BodyDashboardActivity"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rikerapp.riker.activities.HomeActivity" />
+        </activity>
+    </application>
+</manifest>

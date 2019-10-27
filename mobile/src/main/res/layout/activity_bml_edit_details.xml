@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentBackground"
+    android:focusableInTouchMode="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:text="Logged at"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/loggedAtDateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:text="07/29/2017"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/data_panel_button_text_size" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:text="Weight units"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/weightUnitsSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Body weight"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/bodyWeightEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:text="220" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top_section"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:text="Size units"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sizeUnitsSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/data_panel_button_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_button_margin_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Arm size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/armSizeEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:text="10" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Chest size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/chestSizeEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:text="10" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Calf size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/calfSizeEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:text="10" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Thigh size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/thighSizeEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:text="10" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Forearm size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/forearmSizeEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:text="10" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Waist size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/waistSizeEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:text="10" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/data_panel_margin_top"
+                android:layout_marginBottom="@dimen/content_margin_bottom"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:weightSum="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/data_panel_margin_horizontal"
+                    android:layout_marginTop="@dimen/data_panel_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/data_panel_label_margin_vertical"
+                    android:layout_weight="0.75"
+                    android:text="Neck size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/data_panel_text_size" />
+                <EditText
+                    android:id="@+id/neckSizeEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="@dimen/data_panel_margin_horizontal"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:text="10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

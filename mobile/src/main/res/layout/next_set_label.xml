@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nextSetButton"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/next_set_round_button"
+    android:text="1"
+    android:textSize="@dimen/enter_reps_screen_button_round_set_text_size"
+    android:gravity="center" />

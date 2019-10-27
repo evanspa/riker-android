@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setButton"
+    android:layout_width="@dimen/enter_reps_screen_button_round_set_size"
+    android:layout_height="@dimen/enter_reps_screen_button_round_set_size"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/set_round_button"
+    android:text="1"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/enter_reps_screen_button_round_set_text_size"
+    android:gravity="center" />

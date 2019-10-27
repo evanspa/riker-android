@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/google_fit_icon"/>
+        <TextView
+            android:id="@+id/googleFitDialogPromptTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/google_fit_prompt"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/googleFitConnectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_select_screen_btn_side_margin"
+            android:layout_marginRight="@dimen/button_select_screen_btn_side_margin"
+            android:paddingTop="@dimen/button_select_screen_btn_vert_padding"
+            android:paddingBottom="@dimen/button_select_screen_btn_vert_padding"
+            android:background="@color/googleFitPink"
+            android:textSize="@dimen/button_select_screen_btn_text_size"
+            android:textColor="@android:color/white"
+            android:text="Connect to Google Fit" />
+        <Button
+            android:id="@+id/googleFitCancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_select_screen_btn_side_margin"
+            android:layout_marginRight="@dimen/button_select_screen_btn_side_margin"
+            android:layout_marginTop="@dimen/button_select_screen_btn_margin_top"
+            android:layout_marginBottom="25dp"
+            android:paddingTop="@dimen/button_select_screen_btn_vert_padding"
+            android:paddingBottom="@dimen/button_select_screen_btn_vert_padding"
+            android:background="@color/colorPrimary"
+            android:textSize="@dimen/button_select_screen_btn_text_size"
+            android:textColor="@android:color/white"
+            android:text="Cancel" />
+    </LinearLayout>
+</ScrollView>

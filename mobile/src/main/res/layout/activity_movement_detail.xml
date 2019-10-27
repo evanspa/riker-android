@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rikerapp.riker.activities.MovementDetailActivity"
+    android:background="@color/contentBackground"
+    android:focusableInTouchMode="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/enter_reps_screen_content_horizontal_margin"
+            android:layout_marginRight="@dimen/enter_reps_screen_content_horizontal_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/movementLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bench press"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+            <Button
+                android:id="@+id/movementStartSetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/bootstrapBlue"
+                android:text="Start Set"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/bodyLiftTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Push-up is a body-lift movement that Riker estimate to use 64% of your body weight."
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            <TextView
+                android:id="@+id/movementAliasesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Push-up is also known by the following names: floor dip and press-up."
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            <TextView
+                android:id="@+id/primaryMusclesIntroTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="The following are the primary muscles hit by the bench press movement."
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            <LinearLayout
+                android:id="@+id/primaryMusclesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+            <TextView
+                android:id="@+id/secondaryMusclesIntroTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="The following are the secondary muscles hit by the bench press movement."
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            <LinearLayout
+                android:id="@+id/secondaryMusclesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+            <TextView
+                android:id="@+id/movementVariantsIntroTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="The following are the variants available for the bench press movement:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            <LinearLayout
+                android:id="@+id/movementVariantsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="150dp"
+            android:orientation="vertical">
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/heading_panel_vertical_padding"
+                android:paddingBottom="@dimen/heading_panel_vertical_padding"
+                android:layout_marginLeft="@dimen/home_header_buttons_horizontal_margin"
+                android:layout_marginRight="@dimen/home_header_buttons_horizontal_margin"
+                app:flexWrap="wrap"
+                app:justifyContent="center">
+                <Button
+                    android:id="@+id/repsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="@dimen/home_header_buttons_button_vertical_margin"
+                    android:layout_marginBottom="@dimen/home_header_buttons_button_vertical_margin"
+                    android:layout_marginLeft="@dimen/home_header_buttons_button_horizontal_margin"
+                    android:layout_marginRight="@dimen/home_header_buttons_button_horizontal_margin"
+                    android:background="@color/repsSubSection"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/home_header_buttons_button_text_size"
+                    android:text="Reps"  />
+                <Button
+                    android:id="@+id/restTimeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="@dimen/home_header_buttons_button_vertical_margin"
+                    android:layout_marginBottom="@dimen/home_header_buttons_button_vertical_margin"
+                    android:layout_marginLeft="@dimen/home_header_buttons_button_horizontal_margin"
+                    android:layout_marginRight="@dimen/home_header_buttons_button_horizontal_margin"
+                    android:background="@color/restTimeSubSection"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/home_header_buttons_button_text_size"
+                    android:text="Rest Time"  />
+                <Button
+                    android:id="@+id/bodyCompositionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="@dimen/home_header_buttons_button_vertical_margin"
+                    android:layout_marginBottom="@dimen/home_header_buttons_button_vertical_margin"
+                    android:layout_marginLeft="@dimen/home_header_buttons_button_horizontal_margin"
+                    android:layout_marginRight="@dimen/home_header_buttons_button_horizontal_margin"
+                    android:background="#59636C"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/home_header_buttons_button_text_size"
+                    android:text="Your Body"  />
+                <Button
+                    android:id="@+id/workoutsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="@dimen/home_header_buttons_button_vertical_margin"
+                    android:layout_marginBottom="@dimen/home_header_buttons_button_vertical_margin"
+                    android:layout_marginLeft="@dimen/home_header_buttons_button_horizontal_margin"
+                    android:layout_marginRight="@dimen/home_header_buttons_button_horizontal_margin"
+                    android:background="#59636C"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/home_header_buttons_button_text_size"
+                    android:text="Workouts"  />
+            </com.google.android.flexbox.FlexboxLayout>
+            <include layout="@layout/dashboard_content" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

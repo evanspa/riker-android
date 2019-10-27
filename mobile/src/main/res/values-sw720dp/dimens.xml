@@ -1,0 +1,23 @@
+<!-- For 10” tablets (720dp wide and bigger) -->
+<resources>
+    <dimen name="fab_margin">64dp</dimen>
+
+    <!-- Default screen margins -->
+    <dimen name="activity_horizontal_margin">108dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+
+    <!-- Splash screen -->
+    <dimen name="splash_welcome_to_font_size">34sp</dimen>
+    <dimen name="splash_welcome_to_margin_top">28dp</dimen>
+    <dimen name="splash_title_font_size">152sp</dimen>
+    <dimen name="splash_subtitle_font_size">32sp</dimen>
+    <dimen name="splash_go_button_font_size">40sp</dimen>
+    <dimen name="splash_pager_tab_button_default_thickness">6dp</dimen>
+    <dimen name="splash_pager_tab_button_selected_thickness">8dp</dimen>
+
+    <!-- Navigation Drawer Header Padding -->
+    <dimen name="nav_drawer_header_padding_top">48dp</dimen>
+    <dimen name="nav_drawer_header_padding_left">22dp</dimen>
+    <dimen name="nav_drawer_header_padding_bottom">24dp</dimen>
+
+</resources>
